@@ -1,0 +1,26 @@
+> Inclusion: ../../aides_logement.catala_fr
+
+```catala
+déclaration champ d'application TestFixed:
+    a champ d'application CalculAidePersonnaliséeLogementLocatif
+    résultat aide_finale_formule contenu argent
+
+champ d'application TestFixed:
+    définition a.bénéficiaire_aide_adulte_ou_enfant_handicapés égal à vrai
+    définition a.colocation égal à vrai
+    définition a.date_courante égal à |2020-10-01|
+    définition a.logement_est_chambre égal à faux
+    définition a.logement_meublé_d842_2 égal à vrai
+    définition a.loyer_principal égal à 333,94€
+    définition a.nombre_personnes_à_charge égal à 0
+    définition a.ressources_ménage_arrondies égal à 42,00€
+    définition a.réduction_loyer_solidarité égal à 42,00€
+    définition a.résidence égal à Guadeloupe
+    définition a.situation_familiale_calcul_apl égal à PersonneSeule
+    définition a.type_aide égal à AidePersonnaliséeLogement
+    définition a.zone égal à Zone1
+    définition a.âgées_ou_handicap_adultes_hébergées_onéreux_particuliers égal à vrai
+
+    définition aide_finale_formule égal à a.aide_finale_formule
+```
+

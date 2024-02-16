@@ -1,0 +1,18 @@
+```catala
+déclaration champ d'application Test:
+    interne loyer_référence contenu argent
+    interne loyer_éligible contenu argent
+    résultat x contenu décimal
+    résultat y contenu décimal
+    résultat z contenu décimal
+
+champ d'application Test:
+    définition loyer_référence égal à 258,69 €
+    définition loyer_éligible égal à 222,62 €
+
+    définition x égal à (loyer_éligible / loyer_référence)
+    définition y égal à ((loyer_éligible / loyer_référence) * 100,0)
+    définition z égal à arrondi de ((loyer_éligible / loyer_référence) * 100,0) / 100,0
+
+    assertion z = 0,86
+```
