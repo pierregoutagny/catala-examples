@@ -1,11 +1,11 @@
 > Inclusion: ../../aides_logement.catala_fr
 
 ```catala
-déclaration champ d'application TestFixed:
+déclaration champ d'application Test:
     a champ d'application CalculAidePersonnaliséeLogementLocatif
     résultat aide_finale_formule contenu argent
 
-champ d'application TestFixed:
+champ d'application Test:
     définition a.bénéficiaire_aide_adulte_ou_enfant_handicapés égal à vrai
     définition a.colocation égal à vrai
     définition a.date_courante égal à |2020-10-01|
