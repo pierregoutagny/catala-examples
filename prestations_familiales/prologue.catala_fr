@@ -11,11 +11,9 @@ déclaration énumération SituationObligationScolaire:
   -- Après
 
 déclaration structure EnfantPrestationsFamiliales :
-  donnée identifiant contenu entier
   donnée obligation_scolaire contenu SituationObligationScolaire
   donnée rémuneration_mensuelle contenu argent
   donnée date_de_naissance contenu date
-  donnée a_déjà_ouvert_droit_aux_allocations_familiales contenu booléen
 
 déclaration champ d'application ÉligibilitéPrestationsFamiliales:
   entrée date_courante contenu date
