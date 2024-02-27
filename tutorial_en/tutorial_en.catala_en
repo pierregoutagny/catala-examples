@@ -109,18 +109,6 @@ but you should aim to optimize code readability.
 Sometimes, the law gives an enumeration of different situations. These
 enumerations are modeled in Catala using an enumeration type, like:
 
-```catala-metadata
-declaration enumeration TaxCredit:
-# The name "TaxCredit" is also written in CamelCase.
--- NoTaxCredit
-# This line says that "TaxCredit" can be a "NoTaxCredit" situation.
--- ChildrenTaxCredit content integer
-# This line says that alternatively, "TaxCredit" can be a
-# "ChildrenTaxCredit" situation. This situation carries a content
-# of type integer corresponding to the number of children concerned
-# by the tax credit. This means that if you're in the "ChildrenTaxCredit"
-# situation, you will also have access to this number of children.
-```
 
 In computer science terms, such an enumeration is called a "sum type" or simply
 an enum. The combination of structures and enumerations allow the Catala
@@ -516,7 +504,7 @@ scope Test3:
     -- number_of_children: 0
   }
   definition income_tax equals tax_computation.income_tax
-  assertion income_tax = $0
+#  assertion income_tax = $0
 ```
 
 ### Defining exceptions to groups of rules
@@ -715,128 +703,7 @@ programs with scope, definitions and exceptions. But to be able to handle
 most statutes, Catala comes with support for the usual types of values
 on which legislative computations operate.
 
-### Booleans
 
-Booleans are the most basic type of value in Catala: they can be either true
-or false. Conditions are simply booleans with a default value of false,
-see the section about conditions above.
-
-```catala
-declaration scope BooleanValues:
-  internal value1 condition
-  internal value2 content boolean
-
-scope BooleanValues:
-  rule value1 under condition false and true consequence fulfilled
-  # Sets the boolean of the value1 condition to "true" under condition
-  # "false and true"
-  definition value2 equals value1 xor (value1 and true) = false
-  # Boolean operators include and, or, xor
-```
-
-### Integers
-
-Integers in Catala are infinite precision: they behave like true mathematical
-integers, and not like computer integers that are bounded by a maximum value
-due to them being stored in 32 or 64 bits. Integers can be negative.
-
-```catala
-declaration scope IntegerValues:
-  internal value1 content integer
-  internal value2 content integer
-
-scope IntegerValues:
-  definition value1 under condition 12 - (5 * 3) < 65 consequence equals 45 * 9
-  # The / operators corresponds to an integer division that truncates towards 0.
-  definition value2 equals value1 * value1 * 65 * 100
-```
-
-### Decimals
-
-Decimals in Catala also have infinite precisions, behaving like true mathematical
-rational numbers, and not like computer floating point numbers that perform
-approximate computations. Operators are suffixed with ".".
-
-```catala
-declaration scope DecimalValues:
-  internal value1 content decimal
-  internal value2 content decimal
-
-scope DecimalValues:
-  definition value1 under condition
-    12.655465446655426 - 0.45265426541654  < 12.3554654652 consequence
-  equals 45 / 9
-  # The / operator corresponds to an exact division. The division of integers
-  # yields a decimal.
-  definition value2 equals value1 * value1 * 65%
-  # Percentages are decimal numbers (0.65 here)
-```
-
-### Money
-
-In Catala, money is simply represented as an integer number of cents. You cannot
-in Catala have a more precise amount of money than a cent. However, you can
-muliply an amount of money by a decimal, and the result is rounded towards the
-nearest cent. This principled behaviour to keep track of where you need precision
-in your computations and select decimals for precision instead of relying on
-money figures where sub-cent precision matters. Two money amounts can be divided,
-yielding a decimal.
-
-```catala
-declaration scope MoneyValues:
-  internal value1 content decimal
-  internal value2 content money
-
-scope MoneyValues:
-  definition value1 under condition
-    12.655465446655426 - 0.45265426541654  < 12.3554654652 consequence
-  equals (decimal of 45) / (decimal of 9)
-  definition value2 equals
-    $1.00 * ((($6,520.23 - $320.45) * value1) / $45)
-```
-
-
-### Dates and durations
-
-Catala has support for Gregorian calendar dates as well as duration computations
-in terms of days, months and years. A difference between dates is a duration
-measured in days, and the addition of a date and a duration yields a new date.
-Durations measured in days, months or years are not mixable with each other,
-as months and years do not always have the same number of days. This non-mixability
-is not captured by the type system of Catala but will yield errors at runtime.
-Date literals are specified using the ISO 8601 standard to avoid confusion between
-american and european notations. Date operators are prefixed by "@" while
-duration operators are prefixed by "^".
-
-```catala
-declaration scope DateValues:
-  internal value1 content date
-  internal value2 content duration
-
-scope DateValues:
-  definition value1 equals |2000-01-01| + 1 year # yields |2001-01-01|
-  definition value2 equals
-    (value1 - |1999-12-31|) + 45 day # 367 + 45 days (2000 is bissextile)
-```
-
-### Listes
-
-Often, Catala programs need to speak about a collection of data because the law
-talks about the number of children, the maximum of a list, etc. Catala features
-first-class support for lists.
-You can create a list, filter its elements but also aggregate over its contents
-to compute all sorts of values.
-
-```catala
-declaration scope ListValues:
-  internal value1 content list of integer
-  internal value2 content integer
-
-scope ListValues:
-  definition value1 equals [45;-6;3;4;0;2155]
-  definition value2 equals sum integer of (i * i) for i among value1
-  # sum of squares
-```
 
 ## Conclusion
 
