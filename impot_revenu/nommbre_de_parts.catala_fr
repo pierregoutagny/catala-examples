@@ -1,0 +1,24 @@
+> Inclusion: ../../sources/prologue.catala_fr
+> Inclusion: ../../sources/vérifications.catala_fr
+> Inclusion: ../../sources/cgi_revenus.catala_fr
+
+```catala
+déclaration champ d'application Test:
+    a champ d'application NombreDeParts
+    entrée foyer_fiscal contenu DescriptionFoyerFiscal
+    entrée année_revenu contenu entier
+    résultat nombre_de_parts contenu décimal
+    résultat abattement contenu argent
+
+champ d'application Test:
+    assertion (foyer_fiscal.nombre_enfants_à_charge_résidence_alternée >= 0)
+    assertion (foyer_fiscal.nombre_enfants_à_charge_résidence_alternée <= 10)
+    assertion (foyer_fiscal.nombre_enfants_à_charge_mineurs_et_non_mariés >= 0)
+
+    définition a.foyer_fiscal égal à foyer_fiscal
+    définition a.année_revenus égal à année_revenu
+
+    définition nombre_de_parts égal à a.nombre_de_parts
+    définition abattement égal à a.abattement
+```
+

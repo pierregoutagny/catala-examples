@@ -1,0 +1,79 @@
+# Prologue
+
+## Calcul du nombre de parts
+
+```catala-metadata
+
+déclaration énumération SituationFamiliale:
+  -- Mariées
+  -- Pacsées
+  -- DivorcéeSéparées
+  -- Célibataire
+  -- Veuve
+
+déclaration structure DescriptionFoyerFiscal:
+  # Case CF
+  donnée nombre_enfants_à_charge_mineurs_et_non_mariés contenu entier
+  # Case CG
+  donnée nombre_enfants_à_charge_mineurs_et_non_mariés_invalides
+    contenu entier
+  # Case CH
+  donnée nombre_enfants_à_charge_résidence_alternée contenu entier
+  # Case CI
+  donnée nombre_enfants_à_charge_résidence_alternée_invalides contenu entier
+  # Case CR
+  donnée nombre_autres_personnes_invalides_vivant_sous_toit contenu entier
+  # Case DJ
+  donnée nombre_enfants_majeurs_célibataires_sans_enfant contenu entier
+  # Case DN
+  donnée nombre_enfants_majeurs_mariés_ou_chargés_famille contenu décimal
+  # Case AM
+  donnée mariées contenu booléen
+  # Case AD
+  donnée célibataire contenu booléen
+  # Case AO
+  donnée pacsées contenu booléen
+  # Case AC
+  donnée divorcée_séparées contenu booléen
+  # Case AV
+  donnée veuve contenu booléen
+  # Case BT
+  donnée parent_isolé contenu booléen
+  # Case AL
+  donnée célibataire_divorcé_veuf_sans_enfant contenu booléen
+  # Case AP
+  donnée titulaire_carte_invalidité_CMI_invalidité_40_pourcent contenu booléen
+  # Case AF
+  donnée conjoint_titulaire_carte_invalidité_CMI_invalidité_40_pourcent
+    contenu booléen
+  # TODO juridique: vérifier que la case AF n'est pas cumulable avec AC/AV/AO et
+  # la case BT et les cases AG, AS, AP, AW ?
+  # Case AW
+  donnée pensionné_guerre_célibataire_veuf contenu booléen
+  # Case AS
+  donnée pensionné_guerre_marié_pacsé contenu booléen
+  # Case AG
+  donnée pensionné_veuve_de_guerre contenu booléen
+
+déclaration champ d'application NombreDeParts:
+  entrée foyer_fiscal contenu DescriptionFoyerFiscal
+  entrée année_revenus contenu entier
+
+  interne nombre_enfants_à_charge_mineurs_et_non_mariés_invalides
+    contenu entier
+  interne situation_195_1_applicable condition
+  interne situation_familiale contenu SituationFamiliale
+
+  résultat nombre_de_parts contenu décimal
+    état base_194
+    état résidence_alternée_194
+    état parent_isolé_194
+    état paragraphe_2_195
+    état paragraphe_3_195
+    état paragraphe_4_195
+    état paragraphe_5_195
+    état paragraphe_6_195
+    état article_196_B
+
+  résultat abattement contenu argent
+```
