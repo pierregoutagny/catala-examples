@@ -1,0 +1,45 @@
+> Inclusion: ../../aides_logement.catala_fr
+
+```catala
+déclaration champ d'application Test:
+    a champ d'application CalculAidePersonnaliséeLogementLocatif
+    entrée bénéficiaire_aide_adulte_ou_enfant_handicapés contenu booléen
+    entrée colocation contenu booléen
+    entrée date_courante contenu date
+    entrée logement_est_chambre contenu booléen
+    entrée logement_meublé_d842_2 contenu booléen
+    entrée résidence contenu Collectivité
+    entrée situation_familiale_calcul_apl contenu SituationFamilialeCalculAPL
+    entrée type_aide contenu TypeAidesPersonnelleLogement
+    entrée zone contenu ZoneDHabitation
+    entrée âgées_ou_handicap_adultes_hébergées_onéreux_particuliers contenu booléen
+    entrée loyer_principal contenu argent
+    entrée nombre_personnes_à_charge contenu entier
+    entrée ressources_ménage_arrondies contenu argent
+    entrée réduction_loyer_solidarité contenu argent
+    résultat aide_finale_formule contenu argent
+
+champ d'application Test:
+    assertion (date_courante >= |2010-01-01|)
+    assertion (loyer_principal >= 0€)
+    assertion (nombre_personnes_à_charge >= 0)
+    assertion (ressources_ménage_arrondies >= 0€)
+    assertion (réduction_loyer_solidarité >= 0€)
+
+    définition a.bénéficiaire_aide_adulte_ou_enfant_handicapés égal à bénéficiaire_aide_adulte_ou_enfant_handicapés
+    définition a.colocation égal à colocation
+    définition a.date_courante égal à date_courante
+    définition a.logement_est_chambre égal à logement_est_chambre
+    définition a.logement_meublé_d842_2 égal à logement_meublé_d842_2
+    définition a.résidence égal à résidence
+    définition a.situation_familiale_calcul_apl égal à situation_familiale_calcul_apl
+    définition a.type_aide égal à type_aide
+    définition a.zone égal à zone
+    définition a.âgées_ou_handicap_adultes_hébergées_onéreux_particuliers égal à âgées_ou_handicap_adultes_hébergées_onéreux_particuliers
+    définition a.loyer_principal égal à loyer_principal
+    définition a.nombre_personnes_à_charge égal à nombre_personnes_à_charge
+    définition a.ressources_ménage_arrondies égal à ressources_ménage_arrondies
+    définition a.réduction_loyer_solidarité égal à réduction_loyer_solidarité
+
+    définition aide_finale_formule égal à a.aide_finale_formule
+```
