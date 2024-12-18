@@ -1,0 +1,51 @@
+
+```catala
+declaration structure Household:
+ data income content money
+ data nb_children content integer
+
+declaration scope IncomeTaxComputation:
+ input house content Household
+ internal tax_rate content decimal
+ output income_tax content money
+```
+
+## Article 1
+The income tax for an individual is
+defined as a fixed percentage of the
+individual's income over a year.
+```catala
+scope IncomeTaxComputation:
+ definition income_tax equals
+   house.income * tax_rate
+```
+
+## Article 2
+The fixed percentage mentioned at
+article 1 is equal to 20%.
+```catala
+scope IncomeTaxComputation:
+  definition tax_rate equals 20%
+```
+
+## Article 3
+If the individual's income is less
+than $10,000, the fixed percentage
+mentioned at article 1 is equal to 10%.
+```catala
+scope IncomeTaxComputation:
+ exception definition tax_rate
+  under condition house.income <= $10,000
+  consequence equals 10%
+```
+
+## Article 4
+If the individual is in charge of 3 or
+more children, then the fixed percentage
+mentioned at article 1 is equal to 15%.
+```catala
+scope IncomeTaxComputation:
+ exception definition tax_rate
+  under condition house.nb_children >= 3
+  consequence equals 15%
+```
