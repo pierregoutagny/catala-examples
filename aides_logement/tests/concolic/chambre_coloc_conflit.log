@@ -1,0 +1,122 @@
+```catala
+> Inclusion: ./chambre_coloc.catala_fr
+
+déclaration champ d'application Test_Test_37:
+  interne x contenu booléen
+
+champ d'application Test_Test_37:
+  définition x égal à vrai
+  assertion (
+  soit o égal à résultat de Test avec {
+                                          -- loyer_principal: 0,00 €
+                                          -- ressources_ménage_arrondies: 0,00 €
+                                          -- réduction_loyer_solidarité: 0,00 €
+                                          -- colocation: vrai
+                                          -- logement_est_chambre: vrai
+                                          }
+  dans o != o # ↯Conflict(../catala-examples/aides_logement/tests/concolic/../../arrete_2019-09-27.catala_fr:196.5-199.22,../catala-examples/aides_logement/tests/concolic/../../arrete_2019-09-27.catala_fr:552.5-555.22,)↯ at ../catala-examples/aides_logement/tests/concolic/../../prologue.catala_fr:264.12-264.35
+  )
+```
+
+result:
+
+[ERROR] There is a conflict between multiple valid consequences for assigning
+  the same variable.
+
+This consequence has a valid justification:
+┌─⯈ ../catala-examples/aides_logement/tests/concolic/./../../arrete_2019-09-27.catala_fr:553.15-553.22:
+└───┐
+553 │     -- Zone1: 239,48€
+    │               ‾‾‾‾‾‾‾
+    └┬ Arrêté du 27 septembre 2019 relatif au calcul des aides personnelles au logement et de la prime de déménagement
+     └┬ Chapitre III : Calcul des aides personnelles au logement en secteur locatif
+      └─ Article 16
+
+This consequence has a valid justification:
+┌─⯈ ../catala-examples/aides_logement/tests/concolic/./../../arrete_2019-09-27.catala_fr:197.15-197.22:
+└───┐
+197 │     -- Zone1: 287,37€
+    │               ‾‾‾‾‾‾‾
+    └┬ Arrêté du 27 septembre 2019 relatif au calcul des aides personnelles au logement et de la prime de déménagement
+     └┬ Chapitre III : Calcul des aides personnelles au logement en secteur locatif
+      └─ Article 8
+
+
+\begin{frame}[fragile]{Case study: housing benefits}
+    Conflict
+    {\tiny
+    \begin{minted}{catala_fr}
+[RESULT] Evaluating with inputs:
+[RESULT] . colocation_in = vrai
+[RESULT] . logement_est_chambre_in = vrai
+[RESULT] . loyer_principal_in = 0,00 €
+[RESULT] . ressources_ménage_arrondies_in = 0,00 €
+[RESULT] . réduction_loyer_solidarité_in = 0,00 €
+[RESULT] Output of scope after evaluation:
+[RESULT]
+Found error ↯Conflict(../catala-examples/aides_logement/tests/concolic/../../arrete_2019-09-27.catala_fr:196.5-199.22,../catala-examples/aides_logement/tests/concolic/../../arrete_2019-09-27.catala_fr:552.5-555.22,)↯ at ../catala-examples/aides_logement/tests/concolic/../../prologue.catala_fr:264.12-264.35
+    \end{minted}
+    }
+\end{frame}
+
+\begin{frame}[fragile]{Case study: housing benefits}
+   {\tiny
+      \begin{minted}{catala_fr}
+[ERROR] There is a conflict between multiple valid consequences for assigning
+  the same variable.
+
+This consequence has a valid justification:
+┌─> ./aides_logement/arrete_2019-09-27.catala_fr:553.15-553.22:
+└───┐
+553 │     -- Zone1: 239,48€
+    │                      
+    └┬ Arrêté du 27 septembre 2019 relatif au calcul des aides personnelles au logement et de la prime de déménagement
+     └┬ Chapitre III : Calcul des aides personnelles au logement en secteur locatif
+      └─ Article 16
+
+This consequence has a valid justification:
+┌─> ./aides_logement/arrete_2019-09-27.catala_fr:197.15-197.22:
+└───┐
+197 │     -- Zone1: 287,37€
+    │                      
+    └┬ Arrêté du 27 septembre 2019 relatif au calcul des aides personnelles au logement et de la prime de déménagement
+     └┬ Chapitre III : Calcul des aides personnelles au logement en secteur locatif
+      └─ Article 8
+    \end{minted}
+}
+\end{frame}
+
+\begin{frame}[fragile]{Case study: housing benefits}
+    {\tiny
+    \begin{minted}{catala_fr}
+### Article 8 | LEGIARTI000048109313
+Dans le cas où le logement occupé est une chambre, les plafonds
+de loyers visés au 2° de l'article D. 823-16 du même code sont
+fixés comme suit:
+(...)
+```catala
+champ d'application CalculAidePersonnaliséeLogementLocatif
+  sous condition condition date_courante >= |2023-10-01| et logement_est_chambre:
+
+  définition plafond_loyer_d823_16_2 égal à
+    selon zone sous forme
+    -- Zone1: 287,37€
+    # (...)
+```
+(...)
+### Article 16 | LEGIARTI000048109298
+Dans le cas des colocataires prévus à l'article D. 823-18 du même code :
+(...)
+```catala
+champ d'application CalculAidePersonnaliséeLogementLocatif
+  sous condition date_courante >= |2023-10-01| et colocation:
+  
+  définition plafond_loyer_d823_16_2 égal à
+    selon zone sous forme
+    -- Zone1: 239,48€
+    # (...)
+```
+    \end{minted}
+}
+\end{frame}
+

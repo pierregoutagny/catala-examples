@@ -1,0 +1,20 @@
+> Inclusion: ./chambre_coloc.catala_fr
+
+```catala
+déclaration champ d'application Test_Test_37:
+  interne x contenu booléen
+
+champ d'application Test_Test_37:
+  définition x égal à vrai
+  assertion (
+  soit o égal à résultat de Test avec {
+                                          -- loyer_principal: 0,00 €
+                                          -- ressources_ménage_arrondies: 0,00 €
+                                          -- réduction_loyer_solidarité: 0,00 €
+                                          -- colocation: vrai
+                                          -- logement_est_chambre: vrai
+                                          }
+  dans o != o # ↯Conflict(../catala-examples/aides_logement/tests/concolic/../../arrete_2019-09-27.catala_fr:196.5-199.22,../catala-examples/aides_logement/tests/concolic/../../arrete_2019-09-27.catala_fr:552.5-555.22,)↯ at ../catala-examples/aides_logement/tests/concolic/../../prologue.catala_fr:264.12-264.35
+  )
+```
+
