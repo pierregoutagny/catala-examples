@@ -1,0 +1,137 @@
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mdroit_successions/droit_successions.catala_fr:82.5-83.68:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m82 │[39m     liste de enfant parmi enfants
+[34m│[39m [34m   │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m83 │[39m       tel que (enfant_pris_en_compte_réserve_héréditaire de enfant)
+[34m│[39m [34m   │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mCode civil[39m
+[34m│[39m [34m└┬ Livre III : Des différentes manières dont on acquiert la propriété[39m
+[34m│[39m [34m └┬ Titre II : Des libéralités[39m
+[34m│[39m [34m  └┬ Chapitre III : De la réserve héréditaire, de la quotité disponible et de la réduction[39m
+[34m│[39m [34m   └┬ Section 1 : De la réserve héréditaire et de la quotité disponible[39m
+[34m│[39m [34m    └─ Article 913[39m
+[34m│[39m   [32mfilter[39m [34m([39m[36mλ[39m [36m([39menfant[36m:[39m [36mEnfant[39m[36m)[39m [36m→[39m
+[34m│[39m           enfant_pris_en_compte_réserve_héréditaire enfant[34m)[39m
+[34m│[39m     enfants
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mdroit_successions/droit_successions.catala_fr:137.7-142.6:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m137 │[39m     - somme argent de (
+[34m│[39m [34m    │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m138 │[39m       transforme chaque bien parmi biens_usufruit_rente_viagère en
+[34m│[39m [34m    │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m139 │[39m         si bien.prise_en_compte_pour_réserve_héréditaire alors
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m140 │[39m           0 €
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾[0;31m[39m
+[34m│[39m [34m141 │[39m         sinon bien.valeur
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m142 │[39m     )
+[34m│[39m [34m    │[39m     [1m[31m‾[0;31m[39m
+[34m│[39m [34mCode civil[39m
+[34m│[39m [34m└┬ Livre III : Des différentes manières dont on acquiert la propriété[39m
+[34m│[39m [34m └┬ Titre II : Des libéralités[39m
+[34m│[39m [34m  └┬ Chapitre III : De la réserve héréditaire, de la quotité disponible et de la réduction[39m
+[34m│[39m [34m   └┬ Section 1 : De la réserve héréditaire et de la quotité disponible[39m
+[34m│[39m [34m    └─ Article 917[39m
+[34m│[39m   [32mreduce[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39msum1[36m:[39m [33mmoney[39m[36m)[39m [36m([39msum2[36m:[39m [33mmoney[39m[36m)[39m [36m→[39m sum1 [32m+[39m sum2[34m)[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39m[36m)[39m [36m→[39m [33m¤0.00[39m[34m)[39m
+[34m│[39m     [32mmap[39m [34m([39m[36mλ[39m [36m([39mbien[36m:[39m [36mBienUsufruitRenteViagère[39m[36m)[39m [36m→[39m
+[34m│[39m          [31mif[39m bien[36m.[39m[35mprise_en_compte_pour_réserve_héréditaire[39m [31mthen[39m [33m¤0.00[39m
+[34m│[39m          [31melse[39m bien[36m.[39m[35mvaleur[39m[34m)[39m
+[34m│[39m       biens_usufruit_rente_viagère
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mdroit_successions/droit_successions.catala_fr:137.23-142.6:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m137 │[39m     - somme argent de (
+[34m│[39m [34m    │[39m                       [1m[31m‾[0;31m[39m
+[34m│[39m [34m138 │[39m       transforme chaque bien parmi biens_usufruit_rente_viagère en
+[34m│[39m [34m    │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m139 │[39m         si bien.prise_en_compte_pour_réserve_héréditaire alors
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m140 │[39m           0 €
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾[0;31m[39m
+[34m│[39m [34m141 │[39m         sinon bien.valeur
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m142 │[39m     )
+[34m│[39m [34m    │[39m     [1m[31m‾[0;31m[39m
+[34m│[39m [34mCode civil[39m
+[34m│[39m [34m└┬ Livre III : Des différentes manières dont on acquiert la propriété[39m
+[34m│[39m [34m └┬ Titre II : Des libéralités[39m
+[34m│[39m [34m  └┬ Chapitre III : De la réserve héréditaire, de la quotité disponible et de la réduction[39m
+[34m│[39m [34m   └┬ Section 1 : De la réserve héréditaire et de la quotité disponible[39m
+[34m│[39m [34m    └─ Article 917[39m
+[34m│[39m   [32mmap[39m [34m([39m[36mλ[39m [36m([39mbien[36m:[39m [36mBienUsufruitRenteViagère[39m[36m)[39m [36m→[39m
+[34m│[39m        [31mif[39m bien[36m.[39m[35mprise_en_compte_pour_réserve_héréditaire[39m [31mthen[39m [33m¤0.00[39m
+[34m│[39m        [31melse[39m bien[36m.[39m[35mvaleur[39m[34m)[39m
+[34m│[39m     biens_usufruit_rente_viagère
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mdroit_successions/droit_successions.catala_fr:58.5-58.42:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m58 │[39m     nombre de enfants_réserve_héréditaire = 1
+[34m│[39m [34m   │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mCode civil[39m
+[34m│[39m [34m└┬ Livre III : Des différentes manières dont on acquiert la propriété[39m
+[34m│[39m [34m └┬ Titre II : Des libéralités[39m
+[34m│[39m [34m  └┬ Chapitre III : De la réserve héréditaire, de la quotité disponible et de la réduction[39m
+[34m│[39m [34m   └┬ Section 1 : De la réserve héréditaire et de la quotité disponible[39m
+[34m│[39m [34m    └─ Article 913[39m
+[34m│[39m   [32mlength[39m enfants_réserve_héréditaire
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mdroit_successions/droit_successions.catala_fr:62.5-62.42:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m62 │[39m     nombre de enfants_réserve_héréditaire = 2
+[34m│[39m [34m   │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mCode civil[39m
+[34m│[39m [34m└┬ Livre III : Des différentes manières dont on acquiert la propriété[39m
+[34m│[39m [34m └┬ Titre II : Des libéralités[39m
+[34m│[39m [34m  └┬ Chapitre III : De la réserve héréditaire, de la quotité disponible et de la réduction[39m
+[34m│[39m [34m   └┬ Section 1 : De la réserve héréditaire et de la quotité disponible[39m
+[34m│[39m [34m    └─ Article 913[39m
+[34m│[39m   [32mlength[39m enfants_réserve_héréditaire
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mdroit_successions/droit_successions.catala_fr:66.5-66.42:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m66 │[39m     nombre de enfants_réserve_héréditaire >= 3
+[34m│[39m [34m   │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mCode civil[39m
+[34m│[39m [34m└┬ Livre III : Des différentes manières dont on acquiert la propriété[39m
+[34m│[39m [34m └┬ Titre II : Des libéralités[39m
+[34m│[39m [34m  └┬ Chapitre III : De la réserve héréditaire, de la quotité disponible et de la réduction[39m
+[34m│[39m [34m   └┬ Section 1 : De la réserve héréditaire et de la quotité disponible[39m
+[34m│[39m [34m    └─ Article 913[39m
+[34m│[39m   [32mlength[39m enfants_réserve_héréditaire
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mdroit_successions/droit_successions.catala_fr:105.5-105.42:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m105 │[39m     nombre de enfants_réserve_héréditaire = 0 et conjoint_survivant_non_divorcé
+[34m│[39m [34m    │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mCode civil[39m
+[34m│[39m [34m└┬ Livre III : Des différentes manières dont on acquiert la propriété[39m
+[34m│[39m [34m └┬ Titre II : Des libéralités[39m
+[34m│[39m [34m  └┬ Chapitre III : De la réserve héréditaire, de la quotité disponible et de la réduction[39m
+[34m│[39m [34m   └┬ Section 1 : De la réserve héréditaire et de la quotité disponible[39m
+[34m│[39m [34m    └─ Article 914-1[39m
+[34m│[39m   [32mlength[39m enfants_réserve_héréditaire
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mdroit_successions/droit_successions.catala_fr:121.5-121.42:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m121 │[39m     nombre de enfants_réserve_héréditaire = 0 et (non conjoint_survivant_non_divorcé)
+[34m│[39m [34m    │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mCode civil[39m
+[34m│[39m [34m└┬ Livre III : Des différentes manières dont on acquiert la propriété[39m
+[34m│[39m [34m └┬ Titre II : Des libéralités[39m
+[34m│[39m [34m  └┬ Chapitre III : De la réserve héréditaire, de la quotité disponible et de la réduction[39m
+[34m│[39m [34m   └┬ Section 1 : De la réserve héréditaire et de la quotité disponible[39m
+[34m│[39m [34m    └─ Article 916[39m
+[34m│[39m   [32mlength[39m enfants_réserve_héréditaire
+[34m└─[39m

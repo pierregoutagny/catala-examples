@@ -1,0 +1,1031 @@
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/epilogue.catala_fr:13.5-23.8:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m13 │[39m     contenu de potentiel_plus_âgé parmi enfants
+[34m│[39m [34m   │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m14 │[39m       tel que potentiel_plus_âgé.date_de_naissance est minimum
+[34m│[39m [34m   │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m15 │[39m       ou si liste vide alors Enfant {
+[34m│[39m [34m   │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m16 │[39m         -- identifiant: -1
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m17 │[39m         -- obligation_scolaire: Pendant
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m18 │[39m         -- rémuneration_mensuelle: 0€
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m19 │[39m         -- date_de_naissance: |2999-12-31|
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m20 │[39m         -- prise_en_charge: EffectiveEtPermanente
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m21 │[39m         -- a_déjà_ouvert_droit_aux_allocations_familiales: faux
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m22 │[39m         -- bénéficie_titre_personnel_aide_personnelle_logement: faux
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m23 │[39m       }
+[34m│[39m [34m   │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mÉpilogue[39m
+[34m│[39m [34m└─ Règles diverses[39m
+[34m│[39m   [32mreduce[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39mx1[36m:[39m [36m([39m[36mEnfant[39m[32m,[39m [33mdate[39m[36m)[39m[36m)[39m [36m([39mx2[36m:[39m [36m([39m[36mEnfant[39m[32m,[39m [33mdate[39m[36m)[39m[36m)[39m [36m→[39m
+[34m│[39m      [31mif[39m x1[36m.[39m1 [32m<[39m x2[36m.[39m1 [31mthen[39m x1 [31melse[39m x2[34m)[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39m[36m)[39m [36m→[39m
+[34m│[39m      [31mlet[39m potentiel_plus_âgé [36m:[39m [36mEnfant[39m [36m=[39m
+[34m│[39m        [36m{[39m [36mEnfant[39m
+[34m│[39m          [35midentifiant[39m [36m=[39m [33m-1[39m[36m;[39m
+[34m│[39m          [35mobligation_scolaire[39m [36m=[39m [35mPendant[39m[36m;[39m
+[34m│[39m          [35mrémuneration_mensuelle[39m [36m=[39m [33m¤0.00[39m[36m;[39m
+[34m│[39m          [35mdate_de_naissance[39m [36m=[39m [33m2999-12-31[39m[36m;[39m
+[34m│[39m          [35mprise_en_charge[39m [36m=[39m [35mEffectiveEtPermanente[39m[36m;[39m
+[34m│[39m          [35ma_déjà_ouvert_droit_aux_allocations_familiales[39m [36m=[39m [33mfalse[39m[36m;[39m
+[34m│[39m          [35mbénéficie_titre_personnel_aide_personnelle_logement[39m [36m=[39m [33mfalse[39m[36m;[39m
+[34m│[39m        [36m}[39m
+[34m│[39m      [31min[39m
+[34m│[39m      [36m([39mpotentiel_plus_âgé[36m,[39m
+[34m│[39m        [31mlet[39m potentiel_plus_âgé1 [36m:[39m [36mEnfant[39m [36m=[39m potentiel_plus_âgé [31min[39m
+[34m│[39m        potentiel_plus_âgé1[36m.[39m[35mdate_de_naissance[39m[36m)[39m[34m)[39m
+[34m│[39m     weights
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/epilogue.catala_fr:13.5-23.8:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m13 │[39m     contenu de potentiel_plus_âgé parmi enfants
+[34m│[39m [34m   │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m14 │[39m       tel que potentiel_plus_âgé.date_de_naissance est minimum
+[34m│[39m [34m   │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m15 │[39m       ou si liste vide alors Enfant {
+[34m│[39m [34m   │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m16 │[39m         -- identifiant: -1
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m17 │[39m         -- obligation_scolaire: Pendant
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m18 │[39m         -- rémuneration_mensuelle: 0€
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m19 │[39m         -- date_de_naissance: |2999-12-31|
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m20 │[39m         -- prise_en_charge: EffectiveEtPermanente
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m21 │[39m         -- a_déjà_ouvert_droit_aux_allocations_familiales: faux
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m22 │[39m         -- bénéficie_titre_personnel_aide_personnelle_logement: faux
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m23 │[39m       }
+[34m│[39m [34m   │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mÉpilogue[39m
+[34m│[39m [34m└─ Règles diverses[39m
+[34m│[39m   [32mmap[39m [34m([39m[36mλ[39m [36m([39mpotentiel_plus_âgé[36m:[39m [36mEnfant[39m[36m)[39m [36m→[39m
+[34m│[39m        [36m([39mpotentiel_plus_âgé[36m,[39m
+[34m│[39m          [31mlet[39m potentiel_plus_âgé1 [36m:[39m [36mEnfant[39m [36m=[39m potentiel_plus_âgé [31min[39m
+[34m│[39m          potentiel_plus_âgé1[36m.[39m[35mdate_de_naissance[39m[36m)[39m[34m)[39m
+[34m│[39m     enfants
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_L.catala_fr:85.5-86.60:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m85 │[39m     liste de enfant parmi enfants_à_charge
+[34m│[39m [34m   │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m86 │[39m       tel que prestations_familiales.droit_ouvert de enfant
+[34m│[39m [34m   │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mCode de la sécurité sociale[39m
+[34m│[39m [34m└┬ Partie législative[39m
+[34m│[39m [34m └┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m  └┬ Titre 1 : Champ d'application - Généralités[39m
+[34m│[39m [34m   └┬ Chapitre 2 : Champ d'application[39m
+[34m│[39m [34m    └─ Article L512-3[39m
+[34m│[39m   [32mfilter[39m [34m([39m[36mλ[39m [36m([39menfant[36m:[39m [36mEnfant[39m[36m)[39m [36m→[39m prestations_familiales[36m.[39m[35mdroit_ouvert[39m enfant[34m)[39m
+[34m│[39m     enfants_à_charge
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:40.9-40.71:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m40 │[39m         (nombre de enfants_à_charge_droit_ouvert_prestation_familiale)
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mMontant des plafonds de ressources[39m
+[34m│[39m [34m└─ Circulaire interministérielle N° DSS/SD2B/2017/352 du 22 décembre 2017 relative à la revalorisation au 1er janvier 2018 des plafonds de ressources d’attribution de certaines prestations familiales servies en métropole, en Guadeloupe, en Guyane, en Martinique, à la Réunion, à Saint-Barthélemy, à Saint-Martin et à Mayotte[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:81.9-81.71:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m81 │[39m         (nombre de enfants_à_charge_droit_ouvert_prestation_familiale)
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mMontant des plafonds de ressources[39m
+[34m│[39m [34m└─ Instruction interministérielle n° DSS/SD2B/2018/279 du 17 décembre 2018 relative à la revalorisation au 1er janvier 2019 des plafonds de ressources d’attribution de certaines prestations familiales servies en métropole, en Guadeloupe, en Guyane, en Martinique, à la Réunion, à Saint-Barthélemy, à Saint-Martin et à Mayotte[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:122.9-122.71:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m122 │[39m         (nombre de enfants_à_charge_droit_ouvert_prestation_familiale)
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mMontant des plafonds de ressources[39m
+[34m│[39m [34m└─ Instruction interministerielle no DSS/SD2B/2019/261 du 18 décembre 2019 relative à la revalorisation au 1er janvier 2020 des plafonds de ressources d’attribution de certaines prestations familiales servies en métropole, en Guadeloupe, en Guyane, en Martinique, à La Réunion, à Saint-Barthélemy, à Saint-Martin et à Mayotte[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:166.9-166.71:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m166 │[39m         (nombre de enfants_à_charge_droit_ouvert_prestation_familiale)
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mMontant des plafonds de ressources[39m
+[34m│[39m [34m└┬ Arrêté du 14 décembre 2020 relatif au montant des plafonds de ressources de certaines prestations familiales et aux tranches du barème applicable au recouvrement des indus et à la saisie des prestations[39m
+[34m│[39m [34m └─ Article 1[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:341.9-341.71:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m341 │[39m         (nombre de enfants_à_charge_droit_ouvert_prestation_familiale)
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m  └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m   └─ Article D521-3[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:29.9-29.71:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m29 │[39m         (nombre de enfants_à_charge_droit_ouvert_prestation_familiale)
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mMontant des plafonds de ressources[39m
+[34m│[39m [34m└─ Circulaire interministérielle N° DSS/SD2B/2017/352 du 22 décembre 2017 relative à la revalorisation au 1er janvier 2018 des plafonds de ressources d’attribution de certaines prestations familiales servies en métropole, en Guadeloupe, en Guyane, en Martinique, à la Réunion, à Saint-Barthélemy, à Saint-Martin et à Mayotte[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:70.9-70.71:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m70 │[39m         (nombre de enfants_à_charge_droit_ouvert_prestation_familiale)
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mMontant des plafonds de ressources[39m
+[34m│[39m [34m└─ Instruction interministérielle n° DSS/SD2B/2018/279 du 17 décembre 2018 relative à la revalorisation au 1er janvier 2019 des plafonds de ressources d’attribution de certaines prestations familiales servies en métropole, en Guadeloupe, en Guyane, en Martinique, à la Réunion, à Saint-Barthélemy, à Saint-Martin et à Mayotte[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:111.9-111.71:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m111 │[39m         (nombre de enfants_à_charge_droit_ouvert_prestation_familiale)
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mMontant des plafonds de ressources[39m
+[34m│[39m [34m└─ Instruction interministerielle no DSS/SD2B/2019/261 du 18 décembre 2019 relative à la revalorisation au 1er janvier 2020 des plafonds de ressources d’attribution de certaines prestations familiales servies en métropole, en Guadeloupe, en Guyane, en Martinique, à La Réunion, à Saint-Barthélemy, à Saint-Martin et à Mayotte[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:146.9-146.71:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m146 │[39m         (nombre de enfants_à_charge_droit_ouvert_prestation_familiale)
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mMontant des plafonds de ressources[39m
+[34m│[39m [34m└┬ Arrêté du 14 décembre 2020 relatif au montant des plafonds de ressources de certaines prestations familiales et aux tranches du barème applicable au recouvrement des indus et à la saisie des prestations[39m
+[34m│[39m [34m └─ Article 1[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:327.9-327.71:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m327 │[39m         (nombre de enfants_à_charge_droit_ouvert_prestation_familiale)
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m  └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m   └─ Article D521-3[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_L.catala_fr:442.9-442.69:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m442 │[39m     et (nombre de enfants_à_charge_droit_ouvert_prestation_familiale = 1)
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mCode de la sécurité sociale[39m
+[34m│[39m [34m└┬ Partie législative[39m
+[34m│[39m [34m └┬ Livre 7 : Régimes divers - Dispositions diverses[39m
+[34m│[39m [34m  └┬ Titre 5 : Dispositions particulières à la Guadeloupe, à la Guyane, à la Martinique, à La Réunion, à Saint-Barthélemy et à Saint-Martin[39m
+[34m│[39m [34m   └┬ Chapitre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m    └─ Article L755-12[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_L.catala_fr:436.9-436.69:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m436 │[39m     et (nombre de enfants_à_charge_droit_ouvert_prestation_familiale = 1)
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mCode de la sécurité sociale[39m
+[34m│[39m [34m└┬ Partie législative[39m
+[34m│[39m [34m └┬ Livre 7 : Régimes divers - Dispositions diverses[39m
+[34m│[39m [34m  └┬ Titre 5 : Dispositions particulières à la Guadeloupe, à la Guyane, à la Martinique, à La Réunion, à Saint-Barthélemy et à Saint-Martin[39m
+[34m│[39m [34m   └┬ Chapitre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m    └─ Article L755-12[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_L.catala_fr:139.6-139.32:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m139 │[39m     (nombre de enfants_à_charge >= nombre_enfants_alinéa_2_l521_1)
+[34m│[39m [34m    │[39m      [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mCode de la sécurité sociale[39m
+[34m│[39m [34m└┬ Partie législative[39m
+[34m│[39m [34m └┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m  └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m   └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m    └─ Article L521-1[39m
+[34m│[39m   [32mlength[39m enfants_à_charge
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:229.8-229.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m229 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 3 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Article 7[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:233.12-233.74:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m233 │[39m           ((nombre de enfants_à_charge_droit_ouvert_prestation_familiale) - 3)
+[34m│[39m [34m    │[39m            [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Article 7[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:480.8-480.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m480 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 2 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:488.8-488.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m488 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 2 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:496.8-496.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m496 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 2 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:504.8-504.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m504 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 2 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:512.8-512.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m512 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 2 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:520.8-520.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m520 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 2 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:528.8-528.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m528 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 2 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:536.8-536.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m536 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 2 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:544.8-544.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m544 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 2 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:552.8-552.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m552 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 2 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:220.8-220.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m220 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 2 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Article 7[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_R.catala_fr:162.7-165.8:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m162 │[39m       (
+[34m│[39m [34m    │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34m163 │[39m         nombre de
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m164 │[39m           enfants_à_charge_droit_ouvert_prestation_familiale
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m165 │[39m       )
+[34m│[39m [34m    │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets en Conseil d'Etat[39m
+[34m│[39m [34m└┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m  └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m   └─ Article R521-3[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_R.catala_fr:142.5-151.6:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m142 │[39m     somme décimal de (
+[34m│[39m [34m    │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m143 │[39m       transforme chaque enfant parmi enfants_à_charge_droit_ouvert_prestation_familiale en
+[34m│[39m [34m    │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m144 │[39m         selon (prise_en_compte de enfant) sous forme
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m145 │[39m         -- Complète : 1,0
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m146 │[39m         -- Partagée : 0,5
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m147 │[39m         # Pas directement dans cet article de loi, mais concerne le
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m148 │[39m         # cas où l'enfant est pris en charge par les services sociaux et
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m149 │[39m         # la part de l'allocation va également au service social
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m150 │[39m         -- Zéro : 0,0
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m151 │[39m     )
+[34m│[39m [34m    │[39m     [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets en Conseil d'Etat[39m
+[34m│[39m [34m└┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m  └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m   └─ Article R521-3[39m
+[34m│[39m   [32mreduce[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39msum1[36m:[39m [33mdecimal[39m[36m)[39m [36m([39msum2[36m:[39m [33mdecimal[39m[36m)[39m [36m→[39m sum1 [32m+[39m sum2[34m)[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39m[36m)[39m [36m→[39m [33m0.[39m[34m)[39m
+[34m│[39m     [32mmap[39m [34m([39m[36mλ[39m [36m([39menfant[36m:[39m [36mEnfant[39m[36m)[39m [36m→[39m
+[34m│[39m          [31mmatch[39m [36m([39mprise_en_compte enfant[36m)[39m [31mwith[39m
+[34m│[39m          [36m|[39m [35mComplète[39m [36m→[39m [33m1.[39m
+[34m│[39m          [36m|[39m [35mPartagée[39m [36m→[39m [33m0.5[39m
+[34m│[39m          [36m|[39m [35mZéro[39m [36m→[39m [33m0.[39m[34m)[39m
+[34m│[39m       enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_R.catala_fr:142.22-151.6:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m142 │[39m     somme décimal de (
+[34m│[39m [34m    │[39m                      [1m[31m‾[0;31m[39m
+[34m│[39m [34m143 │[39m       transforme chaque enfant parmi enfants_à_charge_droit_ouvert_prestation_familiale en
+[34m│[39m [34m    │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m144 │[39m         selon (prise_en_compte de enfant) sous forme
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m145 │[39m         -- Complète : 1,0
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m146 │[39m         -- Partagée : 0,5
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m147 │[39m         # Pas directement dans cet article de loi, mais concerne le
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m148 │[39m         # cas où l'enfant est pris en charge par les services sociaux et
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m149 │[39m         # la part de l'allocation va également au service social
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m150 │[39m         -- Zéro : 0,0
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m151 │[39m     )
+[34m│[39m [34m    │[39m     [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets en Conseil d'Etat[39m
+[34m│[39m [34m└┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m  └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m   └─ Article R521-3[39m
+[34m│[39m   [32mmap[39m [34m([39m[36mλ[39m [36m([39menfant[36m:[39m [36mEnfant[39m[36m)[39m [36m→[39m
+[34m│[39m        [31mmatch[39m [36m([39mprise_en_compte enfant[36m)[39m [31mwith[39m
+[34m│[39m        [36m|[39m [35mComplète[39m [36m→[39m [33m1.[39m
+[34m│[39m        [36m|[39m [35mPartagée[39m [36m→[39m [33m0.5[39m
+[34m│[39m        [36m|[39m [35mZéro[39m [36m→[39m [33m0.[39m[34m)[39m
+[34m│[39m     enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:292.8-292.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m292 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 0 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:302.8-302.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m302 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 0 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:312.8-312.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m312 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 0 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:322.8-322.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m322 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 0 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:332.8-332.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m332 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 0 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:342.8-342.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m342 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 0 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:352.8-352.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m352 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 0 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:362.8-362.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m362 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 0 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:372.8-372.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m372 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 0 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:382.8-382.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m382 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 0 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:390.8-390.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m390 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 0 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:201.8-201.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m201 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 0 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Article 7[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:392.9-392.69:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m392 │[39m     et (nombre de enfants_à_charge_droit_ouvert_prestation_familiale = 1)
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 7 : Régimes divers - Dispositions diverses[39m
+[34m│[39m [34m └┬ Titre 5 : Départements d'outre-mer[39m
+[34m│[39m [34m  └┬ Chapitre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m   └─ Article D755-5[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:192.6-192.66:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m192 │[39m     (nombre de enfants_à_charge_droit_ouvert_prestation_familiale >= 1)
+[34m│[39m [34m    │[39m      [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Article 7[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_L.catala_fr:422.9-422.69:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m422 │[39m     et (nombre de enfants_à_charge_droit_ouvert_prestation_familiale >= 1)
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mCode de la sécurité sociale[39m
+[34m│[39m [34m└┬ Partie législative[39m
+[34m│[39m [34m └┬ Livre 7 : Régimes divers - Dispositions diverses[39m
+[34m│[39m [34m  └┬ Titre 5 : Dispositions particulières à la Guadeloupe, à la Guyane, à la Martinique, à La Réunion, à Saint-Barthélemy et à Saint-Martin[39m
+[34m│[39m [34m   └┬ Chapitre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m    └─ Article L755-12[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_L.catala_fr:123.5-123.65:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m123 │[39m     nombre de enfants_à_charge_droit_ouvert_prestation_familiale >= 2
+[34m│[39m [34m    │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mCode de la sécurité sociale[39m
+[34m│[39m [34m└┬ Partie législative[39m
+[34m│[39m [34m └┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m  └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m   └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m    └─ Article L521-1[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_L.catala_fr:318.7-318.67:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m318 │[39m       nombre de enfants_à_charge_droit_ouvert_prestation_familiale
+[34m│[39m [34m    │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mCode de la sécurité sociale[39m
+[34m│[39m [34m└┬ Partie législative[39m
+[34m│[39m [34m └┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m  └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m   └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m    └─ Article L521-3[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:44.8-44.68:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m44 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 2 alors
+[34m│[39m [34m   │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m  └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m   └─ Article D521-1[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:48.12-48.74:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m48 │[39m           ((nombre de enfants_à_charge_droit_ouvert_prestation_familiale) - 2)
+[34m│[39m [34m   │[39m            [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m  └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m   └─ Article D521-1[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:86.8-86.68:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m86 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 2 alors
+[34m│[39m [34m   │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m  └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m   └─ Article D521-1[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:90.12-90.74:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m90 │[39m           ((nombre de enfants_à_charge_droit_ouvert_prestation_familiale) - 2)
+[34m│[39m [34m   │[39m            [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m  └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m   └─ Article D521-1[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:126.8-126.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m126 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 2 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m  └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m   └─ Article D521-1[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:130.12-130.74:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m130 │[39m           ((nombre de enfants_à_charge_droit_ouvert_prestation_familiale) - 2)
+[34m│[39m [34m    │[39m            [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m  └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m   └─ Article D521-1[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:399.8-399.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m399 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 1 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:407.8-407.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m407 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 1 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:415.8-415.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m415 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 1 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:423.8-423.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m423 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 1 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:431.8-431.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m431 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 1 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:439.8-439.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m439 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 1 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:447.8-447.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m447 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 1 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:455.8-455.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m455 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 1 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:463.8-463.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m463 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 1 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:471.8-471.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m471 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 1 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Annexe[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/decrets_divers.catala_fr:211.8-211.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m211 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 1 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mDispositions spéciales relatives à Mayotte[39m
+[34m│[39m [34m└┬ Décret n°2002-423 du 29 mars 2002 relatif aux prestations familiales à Mayotte[39m
+[34m│[39m [34m └─ Article 7[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:39.8-39.68:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m39 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 1 alors
+[34m│[39m [34m   │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m  └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m   └─ Article D521-1[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:81.8-81.68:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m81 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 1 alors
+[34m│[39m [34m   │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m  └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m   └─ Article D521-1[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:121.8-121.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m121 │[39m     si nombre de enfants_à_charge_droit_ouvert_prestation_familiale > 1 alors
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m  └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m   └─ Article D521-1[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:207.7-211.10:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m207 │[39m       nombre de
+[34m│[39m [34m    │[39m       [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m208 │[39m         (
+[34m│[39m [34m    │[39m         [1m[31m‾[0;31m[39m
+[34m│[39m [34m209 │[39m           liste de enfant parmi enfants_à_charge
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m210 │[39m             tel que droit_ouvert_forfaitaire de enfant
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m211 │[39m         )
+[34m│[39m [34m    │[39m         [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m  └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m   └─ Article D521-2[39m
+[34m│[39m   [32mlength[39m
+[34m│[39m     [32mfilter[39m [34m([39m[36mλ[39m [36m([39menfant[36m:[39m [36mEnfant[39m[36m)[39m [36m→[39m droit_ouvert_forfaitaire enfant[34m)[39m
+[34m│[39m       enfants_à_charge
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:208.9-211.10:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m208 │[39m         (
+[34m│[39m [34m    │[39m         [1m[31m‾[0;31m[39m
+[34m│[39m [34m209 │[39m           liste de enfant parmi enfants_à_charge
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m210 │[39m             tel que droit_ouvert_forfaitaire de enfant
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m211 │[39m         )
+[34m│[39m [34m    │[39m         [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m └┬ Titre 2 : Prestations générales d'entretien[39m
+[34m│[39m [34m  └┬ Chapitre 1er : Allocations familiales[39m
+[34m│[39m [34m   └─ Article D521-2[39m
+[34m│[39m   [32mfilter[39m [34m([39m[36mλ[39m [36m([39menfant[36m:[39m [36mEnfant[39m[36m)[39m [36m→[39m droit_ouvert_forfaitaire enfant[34m)[39m
+[34m│[39m     enfants_à_charge
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:382.8-382.68:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m382 │[39m     et nombre de enfants_à_charge_droit_ouvert_prestation_familiale = 1
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 7 : Régimes divers - Dispositions diverses[39m
+[34m│[39m [34m └┬ Titre 5 : Départements d'outre-mer[39m
+[34m│[39m [34m  └┬ Chapitre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m   └─ Article D755-5[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:407.9-407.69:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m407 │[39m     et (nombre de enfants_à_charge_droit_ouvert_prestation_familiale = 1)
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 7 : Régimes divers - Dispositions diverses[39m
+[34m│[39m [34m └┬ Titre 5 : Départements d'outre-mer[39m
+[34m│[39m [34m  └┬ Chapitre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m   └─ Article D755-5[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/securite_sociale_D.catala_fr:419.9-419.69:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m419 │[39m     et (nombre de enfants_à_charge_droit_ouvert_prestation_familiale = 1)
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire - Décrets simples[39m
+[34m│[39m [34m└┬ Livre 7 : Régimes divers - Dispositions diverses[39m
+[34m│[39m [34m └┬ Titre 5 : Départements d'outre-mer[39m
+[34m│[39m [34m  └┬ Chapitre 5 : Prestations familiales et prestations assimilées[39m
+[34m│[39m [34m   └─ Article D755-5[39m
+[34m│[39m   [32mlength[39m enfants_à_charge_droit_ouvert_prestation_familiale
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/epilogue.catala_fr:40.7-41.111:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m40 │[39m       somme argent
+[34m│[39m [34m   │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m41 │[39m         de transforme chaque enfant parmi enfants_à_charge en montant_avec_garde_alternée_majoration de enfant
+[34m│[39m [34m   │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mÉpilogue[39m
+[34m│[39m [34m└─ Règles diverses[39m
+[34m│[39m   [32mreduce[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39msum1[36m:[39m [33mmoney[39m[36m)[39m [36m([39msum2[36m:[39m [33mmoney[39m[36m)[39m [36m→[39m sum1 [32m+[39m sum2[34m)[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39m[36m)[39m [36m→[39m [33m¤0.00[39m[34m)[39m
+[34m│[39m     [32mmap[39m [34m([39m[36mλ[39m [36m([39menfant[36m:[39m [36mEnfant[39m[36m)[39m [36m→[39m
+[34m│[39m          montant_avec_garde_alternée_majoration enfant[34m)[39m
+[34m│[39m       enfants_à_charge
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/epilogue.catala_fr:41.12-41.111:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m41 │[39m         de transforme chaque enfant parmi enfants_à_charge en montant_avec_garde_alternée_majoration de enfant
+[34m│[39m [34m   │[39m            [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mÉpilogue[39m
+[34m│[39m [34m└─ Règles diverses[39m
+[34m│[39m   [32mmap[39m [34m([39m[36mλ[39m [36m([39menfant[36m:[39m [36mEnfant[39m[36m)[39m [36m→[39m montant_avec_garde_alternée_majoration enfant[34m)[39m
+[34m│[39m     enfants_à_charge
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mallocations_familiales/epilogue.catala_fr:114.5-135.8:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m114 │[39m     transforme chaque enfant parmi i_enfants en
+[34m│[39m [34m    │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m115 │[39m       Enfant {
+[34m│[39m [34m    │[39m       [1m[31m‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m116 │[39m         -- identifiant: enfant.d_identifiant
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m117 │[39m         -- rémuneration_mensuelle: enfant.d_rémuneration_mensuelle
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m118 │[39m         -- date_de_naissance: enfant.d_date_de_naissance
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m119 │[39m         -- prise_en_charge: enfant.d_prise_en_charge
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m120 │[39m         -- obligation_scolaire:
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m121 │[39m           (
+[34m│[39m [34m    │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m122 │[39m             si enfant.d_date_de_naissance + 3 an >= i_date_courante alors
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m123 │[39m               SituationObligationScolaire.Avant
+[34m│[39m [34m    │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m124 │[39m             sinon
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m125 │[39m               (
+[34m│[39m [34m    │[39m               [1m[31m‾[0;31m[39m
+[34m│[39m [34m126 │[39m                 si enfant.d_date_de_naissance + 16 an >= i_date_courante alors
+[34m│[39m [34m    │[39m                 [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m127 │[39m                   SituationObligationScolaire.Pendant
+[34m│[39m [34m    │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m128 │[39m                 sinon SituationObligationScolaire.Après
+[34m│[39m [34m    │[39m                 [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m129 │[39m               )
+[34m│[39m [34m    │[39m               [1m[31m‾[0;31m[39m
+[34m│[39m [34m130 │[39m           )
+[34m│[39m [34m    │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m131 │[39m         -- a_déjà_ouvert_droit_aux_allocations_familiales:
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m132 │[39m           enfant.d_a_déjà_ouvert_droit_aux_allocations_familiales
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m133 │[39m         -- bénéficie_titre_personnel_aide_personnelle_logement:
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m134 │[39m           enfant.d_bénéficie_titre_personnel_aide_personnelle_logement
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m135 │[39m       }
+[34m│[39m [34m    │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mÉpilogue[39m
+[34m│[39m [34m└┬ Interface du programme[39m
+[34m│[39m [34m └─ Article L131-1[39m
+[34m│[39m   [32mmap[39m [34m([39m[36mλ[39m [36m([39menfant[36m:[39m [36mEnfantEntrée[39m[36m)[39m [36m→[39m
+[34m│[39m        [36m{[39m [36mEnfant[39m
+[34m│[39m          [35midentifiant[39m [36m=[39m enfant[36m.[39m[35md_identifiant[39m[36m;[39m
+[34m│[39m          [35mobligation_scolaire[39m [36m=[39m
+[34m│[39m            [31mif[39m
+[34m│[39m              enfant[36m.[39m[35md_date_de_naissance[39m [32m+[39m [33m[3 years, 0 months, 0 days][39m
+[34m│[39m              [32m>=[39m i_date_courante
+[34m│[39m            [31mthen[39m
+[34m│[39m              [35mAvant[39m
+[34m│[39m            [31melse if[39m
+[34m│[39m              enfant[36m.[39m[35md_date_de_naissance[39m [32m+[39m [33m[16 years, 0 months, 0 days][39m
+[34m│[39m              [32m>=[39m i_date_courante
+[34m│[39m            [31mthen[39m
+[34m│[39m              [35mPendant[39m
+[34m│[39m            [31melse[39m [35mAprès[39m[36m;[39m
+[34m│[39m          [35mrémuneration_mensuelle[39m [36m=[39m enfant[36m.[39m[35md_rémuneration_mensuelle[39m[36m;[39m
+[34m│[39m          [35mdate_de_naissance[39m [36m=[39m enfant[36m.[39m[35md_date_de_naissance[39m[36m;[39m
+[34m│[39m          [35mprise_en_charge[39m [36m=[39m enfant[36m.[39m[35md_prise_en_charge[39m[36m;[39m
+[34m│[39m          [35ma_déjà_ouvert_droit_aux_allocations_familiales[39m [36m=[39m
+[34m│[39m            enfant[36m.[39m[35md_a_déjà_ouvert_droit_aux_allocations_familiales[39m[36m;[39m
+[34m│[39m          [35mbénéficie_titre_personnel_aide_personnelle_logement[39m [36m=[39m
+[34m│[39m            enfant[36m.[39m[35md_bénéficie_titre_personnel_aide_personnelle_logement[39m[36m;[39m
+[34m│[39m        [36m}[39m[34m)[39m
+[34m│[39m     i_enfants
+[34m└─[39m

@@ -1,0 +1,1330 @@
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_reglementaire.catala_fr:4165.5-4178.8:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m4165 │[39m     transforme chaque tranche parmi tranches_revenus_d832_26 en
+[34m│[39m [34m     │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4166 │[39m       TrancheRevenuDécimal {
+[34m│[39m [34m     │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4167 │[39m         -- haut:
+[34m│[39m [34m     │[39m         [1m[31m‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4168 │[39m           (
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m4169 │[39m             selon tranche.haut sous forme
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4170 │[39m             -- LimiteTranche.Infini : LimiteTrancheDécimal.Infini
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4171 │[39m             -- LimiteTranche.Revenu contenu tranche_haut :
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4172 │[39m               LimiteTrancheDécimal.Revenu contenu ((décimal de tranche_haut) * n_nombre_parts_d832_25)
+[34m│[39m [34m     │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4173 │[39m           )
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m4174 │[39m         -- bas:
+[34m│[39m [34m     │[39m         [1m[31m‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4175 │[39m           décimal de tranche.bas
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4176 │[39m           * n_nombre_parts_d832_25
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4177 │[39m         -- taux: tranche.taux
+[34m│[39m [34m     │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4178 │[39m       }
+[34m│[39m [34m     │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre III : Aide personnalisée au logement[39m
+[34m│[39m [34m  └┬ Chapitre II : Modalités de liquidation et de versement de l'aide personnalisée au logement[39m
+[34m│[39m [34m   └┬ Section 3 : Logements-foyers[39m
+[34m│[39m [34m    └┬ Sous-Section 2 : Conditions d'octroi de l'aide personnalisée au logement aux personnes résidant dans un logement-foyer[39m
+[34m│[39m [34m     └─ Article D832-26[39m
+[34m│[39m   [32mmap[39m [34m([39m[36mλ[39m [36m([39mtranche[36m:[39m [36mTrancheRevenu[39m[36m)[39m [36m→[39m
+[34m│[39m        [36m{[39m [36mTrancheRevenuDécimal[39m
+[34m│[39m          [35mhaut[39m [36m=[39m
+[34m│[39m            [31mmatch[39m tranche[36m.[39m[35mhaut[39m [31mwith[39m
+[34m│[39m            [36m|[39m [35mRevenu[39m tranche_haut [36m→[39m
+[34m│[39m              [35mRevenu[39m [36m([39m[32m([39m[32mto_rat[39m tranche_haut[32m)[39m [32m*[39m n_nombre_parts_d832_25[36m)[39m
+[34m│[39m            [36m|[39m [35mInfini[39m [36m→[39m [35mInfini[39m[36m;[39m
+[34m│[39m          [35mbas[39m [36m=[39m [36m([39m[32mto_rat[39m tranche[36m.[39m[35mbas[39m[36m)[39m [32m*[39m n_nombre_parts_d832_25[36m;[39m
+[34m│[39m          [35mtaux[39m [36m=[39m tranche[36m.[39m[35mtaux[39m[36m;[39m
+[34m│[39m        [36m}[39m[34m)[39m
+[34m│[39m     tranches_revenus_d832_26
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_reglementaire.catala_fr:4237.11-4260.12:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m4237 │[39m           (
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m4238 │[39m             somme décimal de (
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4239 │[39m               transforme chaque tranche parmi tranches_revenus_d832_26_multipliées en
+[34m│[39m [34m     │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4240 │[39m                 (
+[34m│[39m [34m     │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34m4241 │[39m                   si ressources_ménage_arrondies <= tranche.bas alors 0,0
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4242 │[39m                   sinon
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4243 │[39m                     (
+[34m│[39m [34m     │[39m                     [1m[31m‾[0;31m[39m
+[34m│[39m [34m4244 │[39m                       selon tranche.haut sous forme
+[34m│[39m [34m     │[39m                       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4245 │[39m                       -- LimiteTrancheDécimal.Revenu contenu tranche_haut :
+[34m│[39m [34m     │[39m                       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4246 │[39m                         (
+[34m│[39m [34m     │[39m                         [1m[31m‾[0;31m[39m
+[34m│[39m [34m4247 │[39m                           si ressources_ménage_arrondies >= tranche_haut alors
+[34m│[39m [34m     │[39m                           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4248 │[39m                             (tranche_haut - tranche.bas)
+[34m│[39m [34m     │[39m                             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4249 │[39m                             * tranche.taux
+[34m│[39m [34m     │[39m                             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4250 │[39m                           sinon
+[34m│[39m [34m     │[39m                           [1m[31m‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4251 │[39m                             (ressources_ménage_arrondies - tranche.bas)
+[34m│[39m [34m     │[39m                             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4252 │[39m                             * tranche.taux
+[34m│[39m [34m     │[39m                             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4253 │[39m                         )
+[34m│[39m [34m     │[39m                         [1m[31m‾[0;31m[39m
+[34m│[39m [34m4254 │[39m                       -- LimiteTrancheDécimal.Infini :
+[34m│[39m [34m     │[39m                       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4255 │[39m                         (ressources_ménage_arrondies - tranche.bas)
+[34m│[39m [34m     │[39m                         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4256 │[39m                         * tranche.taux
+[34m│[39m [34m     │[39m                         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4257 │[39m                     )
+[34m│[39m [34m     │[39m                     [1m[31m‾[0;31m[39m
+[34m│[39m [34m4258 │[39m                 )
+[34m│[39m [34m     │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34m4259 │[39m             )
+[34m│[39m [34m     │[39m             [1m[31m‾[0;31m[39m
+[34m│[39m [34m4260 │[39m           )
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre III : Aide personnalisée au logement[39m
+[34m│[39m [34m  └┬ Chapitre II : Modalités de liquidation et de versement de l'aide personnalisée au logement[39m
+[34m│[39m [34m   └┬ Section 3 : Logements-foyers[39m
+[34m│[39m [34m    └┬ Sous-Section 2 : Conditions d'octroi de l'aide personnalisée au logement aux personnes résidant dans un logement-foyer[39m
+[34m│[39m [34m     └─ Article D832-26[39m
+[34m│[39m   [32mreduce[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39msum1[36m:[39m [33mdecimal[39m[36m)[39m [36m([39msum2[36m:[39m [33mdecimal[39m[36m)[39m [36m→[39m sum1 [32m+[39m sum2[34m)[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39m[36m)[39m [36m→[39m [33m0.[39m[34m)[39m
+[34m│[39m     [32mmap[39m [34m([39m[36mλ[39m [36m([39mtranche[36m:[39m [36mTrancheRevenuDécimal[39m[36m)[39m [36m→[39m
+[34m│[39m          [31mif[39m ressources_ménage_arrondies [32m<=[39m tranche[36m.[39m[35mbas[39m [31mthen[39m [33m0.[39m
+[34m│[39m          [31melse[39m
+[34m│[39m            [31mmatch[39m tranche[36m.[39m[35mhaut[39m [31mwith[39m
+[34m│[39m            [36m|[39m [35mRevenu[39m tranche_haut [36m→[39m
+[34m│[39m              [31mif[39m ressources_ménage_arrondies [32m>=[39m tranche_haut [31mthen[39m
+[34m│[39m                [36m([39mtranche_haut [32m-[39m tranche[36m.[39m[35mbas[39m[36m)[39m [32m*[39m tranche[36m.[39m[35mtaux[39m
+[34m│[39m              [31melse[39m
+[34m│[39m                [36m([39mressources_ménage_arrondies [32m-[39m tranche[36m.[39m[35mbas[39m[36m)[39m [32m*[39m tranche[36m.[39m[35mtaux[39m
+[34m│[39m            [36m|[39m [35mInfini[39m [36m→[39m
+[34m│[39m              [36m([39m[32m([39mressources_ménage_arrondies [32m-[39m tranche[36m.[39m[35mbas[39m[32m)[39m [32m*[39m tranche[36m.[39m[35mtaux[39m[36m)[39m[34m)[39m
+[34m│[39m       tranches_revenus_d832_26_multipliées
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_reglementaire.catala_fr:4238.30-4259.14:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m4238 │[39m             somme décimal de (
+[34m│[39m [34m     │[39m                              [1m[31m‾[0;31m[39m
+[34m│[39m [34m4239 │[39m               transforme chaque tranche parmi tranches_revenus_d832_26_multipliées en
+[34m│[39m [34m     │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4240 │[39m                 (
+[34m│[39m [34m     │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34m4241 │[39m                   si ressources_ménage_arrondies <= tranche.bas alors 0,0
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4242 │[39m                   sinon
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4243 │[39m                     (
+[34m│[39m [34m     │[39m                     [1m[31m‾[0;31m[39m
+[34m│[39m [34m4244 │[39m                       selon tranche.haut sous forme
+[34m│[39m [34m     │[39m                       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4245 │[39m                       -- LimiteTrancheDécimal.Revenu contenu tranche_haut :
+[34m│[39m [34m     │[39m                       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4246 │[39m                         (
+[34m│[39m [34m     │[39m                         [1m[31m‾[0;31m[39m
+[34m│[39m [34m4247 │[39m                           si ressources_ménage_arrondies >= tranche_haut alors
+[34m│[39m [34m     │[39m                           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4248 │[39m                             (tranche_haut - tranche.bas)
+[34m│[39m [34m     │[39m                             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4249 │[39m                             * tranche.taux
+[34m│[39m [34m     │[39m                             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4250 │[39m                           sinon
+[34m│[39m [34m     │[39m                           [1m[31m‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4251 │[39m                             (ressources_ménage_arrondies - tranche.bas)
+[34m│[39m [34m     │[39m                             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4252 │[39m                             * tranche.taux
+[34m│[39m [34m     │[39m                             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4253 │[39m                         )
+[34m│[39m [34m     │[39m                         [1m[31m‾[0;31m[39m
+[34m│[39m [34m4254 │[39m                       -- LimiteTrancheDécimal.Infini :
+[34m│[39m [34m     │[39m                       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4255 │[39m                         (ressources_ménage_arrondies - tranche.bas)
+[34m│[39m [34m     │[39m                         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4256 │[39m                         * tranche.taux
+[34m│[39m [34m     │[39m                         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4257 │[39m                     )
+[34m│[39m [34m     │[39m                     [1m[31m‾[0;31m[39m
+[34m│[39m [34m4258 │[39m                 )
+[34m│[39m [34m     │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34m4259 │[39m             )
+[34m│[39m [34m     │[39m             [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre III : Aide personnalisée au logement[39m
+[34m│[39m [34m  └┬ Chapitre II : Modalités de liquidation et de versement de l'aide personnalisée au logement[39m
+[34m│[39m [34m   └┬ Section 3 : Logements-foyers[39m
+[34m│[39m [34m    └┬ Sous-Section 2 : Conditions d'octroi de l'aide personnalisée au logement aux personnes résidant dans un logement-foyer[39m
+[34m│[39m [34m     └─ Article D832-26[39m
+[34m│[39m   [32mmap[39m [34m([39m[36mλ[39m [36m([39mtranche[36m:[39m [36mTrancheRevenuDécimal[39m[36m)[39m [36m→[39m
+[34m│[39m        [31mif[39m ressources_ménage_arrondies [32m<=[39m tranche[36m.[39m[35mbas[39m [31mthen[39m [33m0.[39m
+[34m│[39m        [31melse[39m
+[34m│[39m          [31mmatch[39m tranche[36m.[39m[35mhaut[39m [31mwith[39m
+[34m│[39m          [36m|[39m [35mRevenu[39m tranche_haut [36m→[39m
+[34m│[39m            [31mif[39m ressources_ménage_arrondies [32m>=[39m tranche_haut [31mthen[39m
+[34m│[39m              [36m([39mtranche_haut [32m-[39m tranche[36m.[39m[35mbas[39m[36m)[39m [32m*[39m tranche[36m.[39m[35mtaux[39m
+[34m│[39m            [31melse[39m [36m([39mressources_ménage_arrondies [32m-[39m tranche[36m.[39m[35mbas[39m[36m)[39m [32m*[39m tranche[36m.[39m[35mtaux[39m
+[34m│[39m          [36m|[39m [35mInfini[39m [36m→[39m
+[34m│[39m            [36m([39m[32m([39mressources_ménage_arrondies [32m-[39m tranche[36m.[39m[35mbas[39m[32m)[39m [32m*[39m tranche[36m.[39m[35mtaux[39m[36m)[39m[34m)[39m
+[34m│[39m     tranches_revenus_d832_26_multipliées
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_reglementaire.catala_fr:4187.11-4208.12:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m4187 │[39m           (
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m4188 │[39m             somme décimal de (
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4189 │[39m               transforme chaque tranche parmi tranches_revenus_d832_26_multipliées en
+[34m│[39m [34m     │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4190 │[39m                 (
+[34m│[39m [34m     │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34m4191 │[39m                   si ressources_ménage_arrondies <= tranche.bas alors 0,0
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4192 │[39m                   sinon
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4193 │[39m                     selon tranche.haut sous forme
+[34m│[39m [34m     │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4194 │[39m                     -- LimiteTrancheDécimal.Revenu contenu tranche_haut :
+[34m│[39m [34m     │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4195 │[39m                       (
+[34m│[39m [34m     │[39m                       [1m[31m‾[0;31m[39m
+[34m│[39m [34m4196 │[39m                         si ressources_ménage_arrondies >= tranche_haut alors
+[34m│[39m [34m     │[39m                         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4197 │[39m                           (tranche_haut - tranche.bas)
+[34m│[39m [34m     │[39m                           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4198 │[39m                           * tranche.taux
+[34m│[39m [34m     │[39m                           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4199 │[39m                         sinon
+[34m│[39m [34m     │[39m                         [1m[31m‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4200 │[39m                           (ressources_ménage_arrondies - tranche.bas)
+[34m│[39m [34m     │[39m                           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4201 │[39m                           * tranche.taux
+[34m│[39m [34m     │[39m                           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4202 │[39m                       )
+[34m│[39m [34m     │[39m                       [1m[31m‾[0;31m[39m
+[34m│[39m [34m4203 │[39m                     -- LimiteTrancheDécimal.Infini :
+[34m│[39m [34m     │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4204 │[39m                       (ressources_ménage_arrondies - tranche.bas)
+[34m│[39m [34m     │[39m                       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4205 │[39m                       * tranche.taux
+[34m│[39m [34m     │[39m                       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4206 │[39m                 )
+[34m│[39m [34m     │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34m4207 │[39m             )
+[34m│[39m [34m     │[39m             [1m[31m‾[0;31m[39m
+[34m│[39m [34m4208 │[39m           )
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre III : Aide personnalisée au logement[39m
+[34m│[39m [34m  └┬ Chapitre II : Modalités de liquidation et de versement de l'aide personnalisée au logement[39m
+[34m│[39m [34m   └┬ Section 3 : Logements-foyers[39m
+[34m│[39m [34m    └┬ Sous-Section 2 : Conditions d'octroi de l'aide personnalisée au logement aux personnes résidant dans un logement-foyer[39m
+[34m│[39m [34m     └─ Article D832-26[39m
+[34m│[39m   [32mreduce[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39msum1[36m:[39m [33mdecimal[39m[36m)[39m [36m([39msum2[36m:[39m [33mdecimal[39m[36m)[39m [36m→[39m sum1 [32m+[39m sum2[34m)[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39m[36m)[39m [36m→[39m [33m0.[39m[34m)[39m
+[34m│[39m     [32mmap[39m [34m([39m[36mλ[39m [36m([39mtranche[36m:[39m [36mTrancheRevenuDécimal[39m[36m)[39m [36m→[39m
+[34m│[39m          [31mif[39m ressources_ménage_arrondies [32m<=[39m tranche[36m.[39m[35mbas[39m [31mthen[39m [33m0.[39m
+[34m│[39m          [31melse[39m
+[34m│[39m            [31mmatch[39m tranche[36m.[39m[35mhaut[39m [31mwith[39m
+[34m│[39m            [36m|[39m [35mRevenu[39m tranche_haut [36m→[39m
+[34m│[39m              [31mif[39m ressources_ménage_arrondies [32m>=[39m tranche_haut [31mthen[39m
+[34m│[39m                [36m([39mtranche_haut [32m-[39m tranche[36m.[39m[35mbas[39m[36m)[39m [32m*[39m tranche[36m.[39m[35mtaux[39m
+[34m│[39m              [31melse[39m
+[34m│[39m                [36m([39mressources_ménage_arrondies [32m-[39m tranche[36m.[39m[35mbas[39m[36m)[39m [32m*[39m tranche[36m.[39m[35mtaux[39m
+[34m│[39m            [36m|[39m [35mInfini[39m [36m→[39m
+[34m│[39m              [36m([39m[32m([39mressources_ménage_arrondies [32m-[39m tranche[36m.[39m[35mbas[39m[32m)[39m [32m*[39m tranche[36m.[39m[35mtaux[39m[36m)[39m[34m)[39m
+[34m│[39m       tranches_revenus_d832_26_multipliées
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_reglementaire.catala_fr:4188.30-4207.14:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m4188 │[39m             somme décimal de (
+[34m│[39m [34m     │[39m                              [1m[31m‾[0;31m[39m
+[34m│[39m [34m4189 │[39m               transforme chaque tranche parmi tranches_revenus_d832_26_multipliées en
+[34m│[39m [34m     │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4190 │[39m                 (
+[34m│[39m [34m     │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34m4191 │[39m                   si ressources_ménage_arrondies <= tranche.bas alors 0,0
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4192 │[39m                   sinon
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4193 │[39m                     selon tranche.haut sous forme
+[34m│[39m [34m     │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4194 │[39m                     -- LimiteTrancheDécimal.Revenu contenu tranche_haut :
+[34m│[39m [34m     │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4195 │[39m                       (
+[34m│[39m [34m     │[39m                       [1m[31m‾[0;31m[39m
+[34m│[39m [34m4196 │[39m                         si ressources_ménage_arrondies >= tranche_haut alors
+[34m│[39m [34m     │[39m                         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4197 │[39m                           (tranche_haut - tranche.bas)
+[34m│[39m [34m     │[39m                           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4198 │[39m                           * tranche.taux
+[34m│[39m [34m     │[39m                           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4199 │[39m                         sinon
+[34m│[39m [34m     │[39m                         [1m[31m‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4200 │[39m                           (ressources_ménage_arrondies - tranche.bas)
+[34m│[39m [34m     │[39m                           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4201 │[39m                           * tranche.taux
+[34m│[39m [34m     │[39m                           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4202 │[39m                       )
+[34m│[39m [34m     │[39m                       [1m[31m‾[0;31m[39m
+[34m│[39m [34m4203 │[39m                     -- LimiteTrancheDécimal.Infini :
+[34m│[39m [34m     │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4204 │[39m                       (ressources_ménage_arrondies - tranche.bas)
+[34m│[39m [34m     │[39m                       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4205 │[39m                       * tranche.taux
+[34m│[39m [34m     │[39m                       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m4206 │[39m                 )
+[34m│[39m [34m     │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34m4207 │[39m             )
+[34m│[39m [34m     │[39m             [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre III : Aide personnalisée au logement[39m
+[34m│[39m [34m  └┬ Chapitre II : Modalités de liquidation et de versement de l'aide personnalisée au logement[39m
+[34m│[39m [34m   └┬ Section 3 : Logements-foyers[39m
+[34m│[39m [34m    └┬ Sous-Section 2 : Conditions d'octroi de l'aide personnalisée au logement aux personnes résidant dans un logement-foyer[39m
+[34m│[39m [34m     └─ Article D832-26[39m
+[34m│[39m   [32mmap[39m [34m([39m[36mλ[39m [36m([39mtranche[36m:[39m [36mTrancheRevenuDécimal[39m[36m)[39m [36m→[39m
+[34m│[39m        [31mif[39m ressources_ménage_arrondies [32m<=[39m tranche[36m.[39m[35mbas[39m [31mthen[39m [33m0.[39m
+[34m│[39m        [31melse[39m
+[34m│[39m          [31mmatch[39m tranche[36m.[39m[35mhaut[39m [31mwith[39m
+[34m│[39m          [36m|[39m [35mRevenu[39m tranche_haut [36m→[39m
+[34m│[39m            [31mif[39m ressources_ménage_arrondies [32m>=[39m tranche_haut [31mthen[39m
+[34m│[39m              [36m([39mtranche_haut [32m-[39m tranche[36m.[39m[35mbas[39m[36m)[39m [32m*[39m tranche[36m.[39m[35mtaux[39m
+[34m│[39m            [31melse[39m [36m([39mressources_ménage_arrondies [32m-[39m tranche[36m.[39m[35mbas[39m[36m)[39m [32m*[39m tranche[36m.[39m[35mtaux[39m
+[34m│[39m          [36m|[39m [35mInfini[39m [36m→[39m
+[34m│[39m            [36m([39m[32m([39mressources_ménage_arrondies [32m-[39m tranche[36m.[39m[35mbas[39m[32m)[39m [32m*[39m tranche[36m.[39m[35mtaux[39m[36m)[39m[34m)[39m
+[34m│[39m     tranches_revenus_d832_26_multipliées
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_reglementaire.catala_fr:1027.7-1027.42:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m1027 │[39m     + nombre de ménage.personnes_à_charge
+[34m│[39m [34m     │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre II : Dispositions communes aux aides personnelles au logement[39m
+[34m│[39m [34m  └┬ Chapitre II : Conditions générales d'attribution[39m
+[34m│[39m [34m   └┬ Section 3 : Conditions relatives au logement[39m
+[34m│[39m [34m    └─ Article R822-25[39m
+[34m│[39m   [32mlength[39m ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_reglementaire.catala_fr:5580.11-5580.46:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m5580 │[39m         + nombre de ménage.personnes_à_charge
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre VI : Disposition particulières à l'outre-mer[39m
+[34m│[39m [34m  └┬ Capitre I : Guadeloupe, Guyane, Martinique, La Réunion et Mayotte[39m
+[34m│[39m [34m   └─ Article R861-5[39m
+[34m│[39m   [32mlength[39m ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_reglementaire.catala_fr:1043.11-1043.46:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m1043 │[39m         + nombre de ménage.personnes_à_charge
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre II : Dispositions communes aux aides personnelles au logement[39m
+[34m│[39m [34m  └┬ Chapitre II : Conditions générales d'attribution[39m
+[34m│[39m [34m   └┬ Section 3 : Conditions relatives au logement[39m
+[34m│[39m [34m    └─ Article R822-25[39m
+[34m│[39m   [32mlength[39m ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/archives.catala_fr:14.5-15.69:[0;34m[39m
+[34m│[39m [34m   │[39m
+[34m│[39m [34m14 │[39m     liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m   │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m15 │[39m       tel que prise_en_compte_personne_à_charge de personne_à_charge
+[34m│[39m [34m   │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mArchives du code de la construction et de l'habitation[39m
+[34m│[39m [34m└┬ Articles en vigueur du 1er septembre 2019 au 1er septembre 2023[39m
+[34m│[39m [34m └─ Article R823-4[39m
+[34m│[39m   [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m           prise_en_compte_personne_à_charge personne_à_charge[34m)[39m
+[34m│[39m     ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_reglementaire.catala_fr:1129.5-1130.69:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m1129 │[39m     liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m     │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1130 │[39m       tel que prise_en_compte_personne_à_charge de personne_à_charge
+[34m│[39m [34m     │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre II : Dispositions communes aux aides personnelles au logement[39m
+[34m│[39m [34m  └┬ Chapitre III : Modalités de liquidation et de versement[39m
+[34m│[39m [34m   └┬ Section 1 : Calcul, liquidation et versement des aides[39m
+[34m│[39m [34m    └─ Article R823-4[39m
+[34m│[39m   [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m           prise_en_compte_personne_à_charge personne_à_charge[34m)[39m
+[34m│[39m     ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/prologue.catala_fr:344.5-365.6:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m344 │[39m     (
+[34m│[39m [34m    │[39m     [1m[31m‾[0;31m[39m
+[34m│[39m [34m345 │[39m       transforme chaque personne_à_charge parmi personnes_à_charge_prises_en_compte
+[34m│[39m [34m    │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m346 │[39m         tel que (
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m347 │[39m           selon personne_à_charge sous forme
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m348 │[39m           -- AutrePersonneÀCharge : faux
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m349 │[39m           -- EnfantÀCharge contenu enfant :
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m350 │[39m             (
+[34m│[39m [34m    │[39m             [1m[31m‾[0;31m[39m
+[34m│[39m [34m351 │[39m               selon enfant.situation_garde_alternée sous forme
+[34m│[39m [34m    │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m352 │[39m               -- GardeAlternéeCoefficientPriseEnCharge : vrai
+[34m│[39m [34m    │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m353 │[39m               -- PasDeGardeAlternée : faux
+[34m│[39m [34m    │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m354 │[39m             )
+[34m│[39m [34m    │[39m             [1m[31m‾[0;31m[39m
+[34m│[39m [34m355 │[39m         )
+[34m│[39m [34m    │[39m         [1m[31m‾[0;31m[39m
+[34m│[39m [34m356 │[39m       en
+[34m│[39m [34m    │[39m       [1m[31m‾‾[0;31m[39m
+[34m│[39m [34m357 │[39m         selon personne_à_charge sous forme
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m358 │[39m         -- AutrePersonneÀCharge : 0,0
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m359 │[39m         -- EnfantÀCharge contenu enfant :
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m360 │[39m           (
+[34m│[39m [34m    │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m361 │[39m             selon enfant.situation_garde_alternée sous forme
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m362 │[39m             -- GardeAlternéeCoefficientPriseEnCharge contenu coeff : coeff
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m363 │[39m             -- PasDeGardeAlternée : 0,0
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m364 │[39m           )
+[34m│[39m [34m    │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m365 │[39m     )
+[34m│[39m [34m    │[39m     [1m[31m‾[0;31m[39m
+[34m│[39m [34mPrologue : aides au logement[39m
+[34m│[39m [34m└┬ Déclarations des champs d'application[39m
+[34m│[39m [34m └─ Éligibilité aux aides personnelles au logement[39m
+[34m│[39m   [32mmap[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m        [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m        [36m|[39m [35mEnfantÀCharge[39m enfant [36m→[39m
+[34m│[39m          [31mmatch[39m enfant[36m.[39m[35msituation_garde_alternée[39m [31mwith[39m
+[34m│[39m          [36m|[39m [35mPasDeGardeAlternée[39m [36m→[39m [33m0.[39m
+[34m│[39m          [36m|[39m [35mGardeAlternéeCoefficientPriseEnCharge[39m coeff [36m→[39m coeff
+[34m│[39m        [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33m0.[39m[34m)[39m
+[34m│[39m     [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m             [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m             [36m|[39m [35mEnfantÀCharge[39m enfant [36m→[39m
+[34m│[39m               [31mmatch[39m enfant[36m.[39m[35msituation_garde_alternée[39m [31mwith[39m
+[34m│[39m               [36m|[39m [35mPasDeGardeAlternée[39m [36m→[39m [33mfalse[39m
+[34m│[39m               [36m|[39m [35mGardeAlternéeCoefficientPriseEnCharge[39m _ [36m→[39m [33mtrue[39m
+[34m│[39m             [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mfalse[39m[34m)[39m
+[34m│[39m       personnes_à_charge_prises_en_compte
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/prologue.catala_fr:345.7-364.12:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m345 │[39m       transforme chaque personne_à_charge parmi personnes_à_charge_prises_en_compte
+[34m│[39m [34m    │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m346 │[39m         tel que (
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m347 │[39m           selon personne_à_charge sous forme
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m348 │[39m           -- AutrePersonneÀCharge : faux
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m349 │[39m           -- EnfantÀCharge contenu enfant :
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m350 │[39m             (
+[34m│[39m [34m    │[39m             [1m[31m‾[0;31m[39m
+[34m│[39m [34m351 │[39m               selon enfant.situation_garde_alternée sous forme
+[34m│[39m [34m    │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m352 │[39m               -- GardeAlternéeCoefficientPriseEnCharge : vrai
+[34m│[39m [34m    │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m353 │[39m               -- PasDeGardeAlternée : faux
+[34m│[39m [34m    │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m354 │[39m             )
+[34m│[39m [34m    │[39m             [1m[31m‾[0;31m[39m
+[34m│[39m [34m355 │[39m         )
+[34m│[39m [34m    │[39m         [1m[31m‾[0;31m[39m
+[34m│[39m [34m356 │[39m       en
+[34m│[39m [34m    │[39m       [1m[31m‾‾[0;31m[39m
+[34m│[39m [34m357 │[39m         selon personne_à_charge sous forme
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m358 │[39m         -- AutrePersonneÀCharge : 0,0
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m359 │[39m         -- EnfantÀCharge contenu enfant :
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m360 │[39m           (
+[34m│[39m [34m    │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m361 │[39m             selon enfant.situation_garde_alternée sous forme
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m362 │[39m             -- GardeAlternéeCoefficientPriseEnCharge contenu coeff : coeff
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m363 │[39m             -- PasDeGardeAlternée : 0,0
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m364 │[39m           )
+[34m│[39m [34m    │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34mPrologue : aides au logement[39m
+[34m│[39m [34m└┬ Déclarations des champs d'application[39m
+[34m│[39m [34m └─ Éligibilité aux aides personnelles au logement[39m
+[34m│[39m   [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m           [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m           [36m|[39m [35mEnfantÀCharge[39m enfant [36m→[39m
+[34m│[39m             [31mmatch[39m enfant[36m.[39m[35msituation_garde_alternée[39m [31mwith[39m
+[34m│[39m             [36m|[39m [35mPasDeGardeAlternée[39m [36m→[39m [33mfalse[39m
+[34m│[39m             [36m|[39m [35mGardeAlternéeCoefficientPriseEnCharge[39m _ [36m→[39m [33mtrue[39m
+[34m│[39m           [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mfalse[39m[34m)[39m
+[34m│[39m     personnes_à_charge_prises_en_compte
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/prologue.catala_fr:342.5-342.50:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m342 │[39m     nombre de personnes_à_charge_prises_en_compte
+[34m│[39m [34m    │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPrologue : aides au logement[39m
+[34m│[39m [34m└┬ Déclarations des champs d'application[39m
+[34m│[39m [34m └─ Éligibilité aux aides personnelles au logement[39m
+[34m│[39m   [32mlength[39m personnes_à_charge_prises_en_compte
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_reglementaire.catala_fr:2109.5-2117.8:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m2109 │[39m     nombre de
+[34m│[39m [34m     │[39m     [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m2110 │[39m       (
+[34m│[39m [34m     │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34m2111 │[39m         liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m     │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m2112 │[39m           tel que (
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m2113 │[39m             selon personne_à_charge sous forme
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m2114 │[39m             -- EnfantÀCharge : vrai
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m2115 │[39m             -- AutrePersonneÀCharge : faux
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m2116 │[39m           )
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m2117 │[39m       )
+[34m│[39m [34m     │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre II : Dispositions communes aux aides personnelles au logement[39m
+[34m│[39m [34m  └┬ Chapitre III : Modalités de liquidation et de versement[39m
+[34m│[39m [34m   └┬ Section 2 : Prime de déménagement[39m
+[34m│[39m [34m    └─ Article D823-20[39m
+[34m│[39m   [32mlength[39m
+[34m│[39m     [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m             [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m             [36m|[39m [35mEnfantÀCharge[39m _ [36m→[39m [33mtrue[39m
+[34m│[39m             [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mfalse[39m[34m)[39m
+[34m│[39m       ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_reglementaire.catala_fr:2110.7-2117.8:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m2110 │[39m       (
+[34m│[39m [34m     │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34m2111 │[39m         liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m     │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m2112 │[39m           tel que (
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m2113 │[39m             selon personne_à_charge sous forme
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m2114 │[39m             -- EnfantÀCharge : vrai
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m2115 │[39m             -- AutrePersonneÀCharge : faux
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m2116 │[39m           )
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m2117 │[39m       )
+[34m│[39m [34m     │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie réglementaire[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre II : Dispositions communes aux aides personnelles au logement[39m
+[34m│[39m [34m  └┬ Chapitre III : Modalités de liquidation et de versement[39m
+[34m│[39m [34m   └┬ Section 2 : Prime de déménagement[39m
+[34m│[39m [34m    └─ Article D823-20[39m
+[34m│[39m   [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m           [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m           [36m|[39m [35mEnfantÀCharge[39m _ [36m→[39m [33mtrue[39m
+[34m│[39m           [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mfalse[39m[34m)[39m
+[34m│[39m     ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/arrete_2019-09-27.catala_fr:5623.10-5627.12:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m5623 │[39m       si nombre de
+[34m│[39m [34m     │[39m          [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m5624 │[39m           (
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m5625 │[39m             liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m5626 │[39m               tel que personne_à_charge sous forme EnfantÀCharge
+[34m│[39m [34m     │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m5627 │[39m           )
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34mArrêté du 27 septembre 2019 relatif au calcul des aides personnelles au logement et de la prime de déménagement[39m
+[34m│[39m [34m└┬ Chapitre VIII : Prime de déménagement[39m
+[34m│[39m [34m └─ Article 45[39m
+[34m│[39m   [32mlength[39m
+[34m│[39m     [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m             [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m             [36m|[39m [35mEnfantÀCharge[39m _ [36m→[39m [33mtrue[39m
+[34m│[39m             [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mfalse[39m[34m)[39m
+[34m│[39m       ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/arrete_2019-09-27.catala_fr:5624.11-5627.12:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m5624 │[39m           (
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m5625 │[39m             liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m5626 │[39m               tel que personne_à_charge sous forme EnfantÀCharge
+[34m│[39m [34m     │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m5627 │[39m           )
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34mArrêté du 27 septembre 2019 relatif au calcul des aides personnelles au logement et de la prime de déménagement[39m
+[34m│[39m [34m└┬ Chapitre VIII : Prime de déménagement[39m
+[34m│[39m [34m └─ Article 45[39m
+[34m│[39m   [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m           [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m           [36m|[39m [35mEnfantÀCharge[39m _ [36m→[39m [33mtrue[39m
+[34m│[39m           [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mfalse[39m[34m)[39m
+[34m│[39m     ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/arrete_2019-09-27.catala_fr:5633.15-5637.18:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m5633 │[39m               nombre de
+[34m│[39m [34m     │[39m               [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m5634 │[39m                 (
+[34m│[39m [34m     │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34m5635 │[39m                   liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m5636 │[39m                     tel que personne_à_charge sous forme EnfantÀCharge
+[34m│[39m [34m     │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m5637 │[39m                 )
+[34m│[39m [34m     │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34mArrêté du 27 septembre 2019 relatif au calcul des aides personnelles au logement et de la prime de déménagement[39m
+[34m│[39m [34m└┬ Chapitre VIII : Prime de déménagement[39m
+[34m│[39m [34m └─ Article 45[39m
+[34m│[39m   [32mlength[39m
+[34m│[39m     [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m             [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m             [36m|[39m [35mEnfantÀCharge[39m _ [36m→[39m [33mtrue[39m
+[34m│[39m             [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mfalse[39m[34m)[39m
+[34m│[39m       ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/arrete_2019-09-27.catala_fr:5634.17-5637.18:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m5634 │[39m                 (
+[34m│[39m [34m     │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34m5635 │[39m                   liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m5636 │[39m                     tel que personne_à_charge sous forme EnfantÀCharge
+[34m│[39m [34m     │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m5637 │[39m                 )
+[34m│[39m [34m     │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34mArrêté du 27 septembre 2019 relatif au calcul des aides personnelles au logement et de la prime de déménagement[39m
+[34m│[39m [34m└┬ Chapitre VIII : Prime de déménagement[39m
+[34m│[39m [34m └─ Article 45[39m
+[34m│[39m   [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m           [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m           [36m|[39m [35mEnfantÀCharge[39m _ [36m→[39m [33mtrue[39m
+[34m│[39m           [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mfalse[39m[34m)[39m
+[34m│[39m     ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_legislatif.catala_fr:1828.5-1845.8:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m1828 │[39m     nombre de
+[34m│[39m [34m     │[39m     [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1829 │[39m       (
+[34m│[39m [34m     │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34m1830 │[39m         liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m     │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1831 │[39m           tel que (
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1832 │[39m             selon personne_à_charge sous forme
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1833 │[39m             -- AutrePersonneÀCharge : faux
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1834 │[39m             -- EnfantÀCharge contenu enfant :
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1835 │[39m               prestations_familiales.droit_ouvert de
+[34m│[39m [34m     │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1836 │[39m                 Prestations_familiales.EnfantPrestationsFamiliales {
+[34m│[39m [34m     │[39m                 [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1837 │[39m                   -- identifiant: enfant.identifiant
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1838 │[39m                   -- obligation_scolaire: enfant.obligation_scolaire
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1839 │[39m                   -- rémuneration_mensuelle: enfant.rémuneration_mensuelle
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1840 │[39m                   -- date_de_naissance: enfant.date_de_naissance
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1841 │[39m                   -- a_déjà_ouvert_droit_aux_allocations_familiales:
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1842 │[39m                     enfant.a_déjà_ouvert_droit_aux_allocations_familiales
+[34m│[39m [34m     │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1843 │[39m                 }
+[34m│[39m [34m     │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34m1844 │[39m           )
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m1845 │[39m       )
+[34m│[39m [34m     │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie législative[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre VI : Dispositions particulières à l'outre-mer[39m
+[34m│[39m [34m  └─ Article L862-3[39m
+[34m│[39m   [32mlength[39m
+[34m│[39m     [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m             [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m             [36m|[39m [35mEnfantÀCharge[39m enfant [36m→[39m
+[34m│[39m               prestations_familiales[36m.[39m[35mdroit_ouvert[39m
+[34m│[39m                 [36m{[39m [36m[34mPrestations_familiales[36m.EnfantPrestationsFamiliales[39m
+[34m│[39m                   [35midentifiant[39m [36m=[39m enfant[36m.[39m[35midentifiant[39m[36m;[39m
+[34m│[39m                   [35mobligation_scolaire[39m [36m=[39m enfant[36m.[39m[35mobligation_scolaire[39m[36m;[39m
+[34m│[39m                   [35mrémuneration_mensuelle[39m [36m=[39m enfant[36m.[39m[35mrémuneration_mensuelle[39m[36m;[39m
+[34m│[39m                   [35mdate_de_naissance[39m [36m=[39m enfant[36m.[39m[35mdate_de_naissance[39m[36m;[39m
+[34m│[39m                   [35ma_déjà_ouvert_droit_aux_allocations_familiales[39m [36m=[39m
+[34m│[39m                     enfant[36m.[39m[35ma_déjà_ouvert_droit_aux_allocations_familiales[39m[36m;[39m
+[34m│[39m                 [36m}[39m
+[34m│[39m             [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mfalse[39m[34m)[39m
+[34m│[39m       ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_legislatif.catala_fr:1829.7-1845.8:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m1829 │[39m       (
+[34m│[39m [34m     │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34m1830 │[39m         liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m     │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1831 │[39m           tel que (
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1832 │[39m             selon personne_à_charge sous forme
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1833 │[39m             -- AutrePersonneÀCharge : faux
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1834 │[39m             -- EnfantÀCharge contenu enfant :
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1835 │[39m               prestations_familiales.droit_ouvert de
+[34m│[39m [34m     │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1836 │[39m                 Prestations_familiales.EnfantPrestationsFamiliales {
+[34m│[39m [34m     │[39m                 [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1837 │[39m                   -- identifiant: enfant.identifiant
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1838 │[39m                   -- obligation_scolaire: enfant.obligation_scolaire
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1839 │[39m                   -- rémuneration_mensuelle: enfant.rémuneration_mensuelle
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1840 │[39m                   -- date_de_naissance: enfant.date_de_naissance
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1841 │[39m                   -- a_déjà_ouvert_droit_aux_allocations_familiales:
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1842 │[39m                     enfant.a_déjà_ouvert_droit_aux_allocations_familiales
+[34m│[39m [34m     │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1843 │[39m                 }
+[34m│[39m [34m     │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34m1844 │[39m           )
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m1845 │[39m       )
+[34m│[39m [34m     │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie législative[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre VI : Dispositions particulières à l'outre-mer[39m
+[34m│[39m [34m  └─ Article L862-3[39m
+[34m│[39m   [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m           [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m           [36m|[39m [35mEnfantÀCharge[39m enfant [36m→[39m
+[34m│[39m             prestations_familiales[36m.[39m[35mdroit_ouvert[39m
+[34m│[39m               [36m{[39m [36m[34mPrestations_familiales[36m.EnfantPrestationsFamiliales[39m
+[34m│[39m                 [35midentifiant[39m [36m=[39m enfant[36m.[39m[35midentifiant[39m[36m;[39m
+[34m│[39m                 [35mobligation_scolaire[39m [36m=[39m enfant[36m.[39m[35mobligation_scolaire[39m[36m;[39m
+[34m│[39m                 [35mrémuneration_mensuelle[39m [36m=[39m enfant[36m.[39m[35mrémuneration_mensuelle[39m[36m;[39m
+[34m│[39m                 [35mdate_de_naissance[39m [36m=[39m enfant[36m.[39m[35mdate_de_naissance[39m[36m;[39m
+[34m│[39m                 [35ma_déjà_ouvert_droit_aux_allocations_familiales[39m [36m=[39m
+[34m│[39m                   enfant[36m.[39m[35ma_déjà_ouvert_droit_aux_allocations_familiales[39m[36m;[39m
+[34m│[39m               [36m}[39m
+[34m│[39m           [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mfalse[39m[34m)[39m
+[34m│[39m     ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_legislatif.catala_fr:1518.5-1535.8:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m1518 │[39m     nombre de
+[34m│[39m [34m     │[39m     [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1519 │[39m       (
+[34m│[39m [34m     │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34m1520 │[39m         liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m     │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1521 │[39m           tel que (
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1522 │[39m             selon personne_à_charge sous forme
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1523 │[39m             -- AutrePersonneÀCharge : faux
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1524 │[39m             -- EnfantÀCharge contenu enfant :
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1525 │[39m               prestations_familiales.droit_ouvert de
+[34m│[39m [34m     │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1526 │[39m                 Prestations_familiales.EnfantPrestationsFamiliales {
+[34m│[39m [34m     │[39m                 [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1527 │[39m                   -- identifiant: enfant.identifiant
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1528 │[39m                   -- obligation_scolaire: enfant.obligation_scolaire
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1529 │[39m                   -- rémuneration_mensuelle: enfant.rémuneration_mensuelle
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1530 │[39m                   -- date_de_naissance: enfant.date_de_naissance
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1531 │[39m                   -- a_déjà_ouvert_droit_aux_allocations_familiales:
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1532 │[39m                     enfant.a_déjà_ouvert_droit_aux_allocations_familiales
+[34m│[39m [34m     │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1533 │[39m                 }
+[34m│[39m [34m     │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34m1534 │[39m           )
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m1535 │[39m       )
+[34m│[39m [34m     │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie législative[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre VI : Dispositions particulières à l'outre-mer[39m
+[34m│[39m [34m  └┬ Chapitre Ier : Guadeloupe, Guyane, Martinique, La Réunion et Mayotte[39m
+[34m│[39m [34m   └┬ Section 4 : Allocations de logement[39m
+[34m│[39m [34m    └─ Article L861-6[39m
+[34m│[39m   [32mlength[39m
+[34m│[39m     [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m             [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m             [36m|[39m [35mEnfantÀCharge[39m enfant [36m→[39m
+[34m│[39m               prestations_familiales[36m.[39m[35mdroit_ouvert[39m
+[34m│[39m                 [36m{[39m [36m[34mPrestations_familiales[36m.EnfantPrestationsFamiliales[39m
+[34m│[39m                   [35midentifiant[39m [36m=[39m enfant[36m.[39m[35midentifiant[39m[36m;[39m
+[34m│[39m                   [35mobligation_scolaire[39m [36m=[39m enfant[36m.[39m[35mobligation_scolaire[39m[36m;[39m
+[34m│[39m                   [35mrémuneration_mensuelle[39m [36m=[39m enfant[36m.[39m[35mrémuneration_mensuelle[39m[36m;[39m
+[34m│[39m                   [35mdate_de_naissance[39m [36m=[39m enfant[36m.[39m[35mdate_de_naissance[39m[36m;[39m
+[34m│[39m                   [35ma_déjà_ouvert_droit_aux_allocations_familiales[39m [36m=[39m
+[34m│[39m                     enfant[36m.[39m[35ma_déjà_ouvert_droit_aux_allocations_familiales[39m[36m;[39m
+[34m│[39m                 [36m}[39m
+[34m│[39m             [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mfalse[39m[34m)[39m
+[34m│[39m       ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_legislatif.catala_fr:1519.7-1535.8:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m1519 │[39m       (
+[34m│[39m [34m     │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34m1520 │[39m         liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m     │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1521 │[39m           tel que (
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1522 │[39m             selon personne_à_charge sous forme
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1523 │[39m             -- AutrePersonneÀCharge : faux
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1524 │[39m             -- EnfantÀCharge contenu enfant :
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1525 │[39m               prestations_familiales.droit_ouvert de
+[34m│[39m [34m     │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1526 │[39m                 Prestations_familiales.EnfantPrestationsFamiliales {
+[34m│[39m [34m     │[39m                 [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1527 │[39m                   -- identifiant: enfant.identifiant
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1528 │[39m                   -- obligation_scolaire: enfant.obligation_scolaire
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1529 │[39m                   -- rémuneration_mensuelle: enfant.rémuneration_mensuelle
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1530 │[39m                   -- date_de_naissance: enfant.date_de_naissance
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1531 │[39m                   -- a_déjà_ouvert_droit_aux_allocations_familiales:
+[34m│[39m [34m     │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1532 │[39m                     enfant.a_déjà_ouvert_droit_aux_allocations_familiales
+[34m│[39m [34m     │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1533 │[39m                 }
+[34m│[39m [34m     │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34m1534 │[39m           )
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m1535 │[39m       )
+[34m│[39m [34m     │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie législative[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre VI : Dispositions particulières à l'outre-mer[39m
+[34m│[39m [34m  └┬ Chapitre Ier : Guadeloupe, Guyane, Martinique, La Réunion et Mayotte[39m
+[34m│[39m [34m   └┬ Section 4 : Allocations de logement[39m
+[34m│[39m [34m    └─ Article L861-6[39m
+[34m│[39m   [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m           [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m           [36m|[39m [35mEnfantÀCharge[39m enfant [36m→[39m
+[34m│[39m             prestations_familiales[36m.[39m[35mdroit_ouvert[39m
+[34m│[39m               [36m{[39m [36m[34mPrestations_familiales[36m.EnfantPrestationsFamiliales[39m
+[34m│[39m                 [35midentifiant[39m [36m=[39m enfant[36m.[39m[35midentifiant[39m[36m;[39m
+[34m│[39m                 [35mobligation_scolaire[39m [36m=[39m enfant[36m.[39m[35mobligation_scolaire[39m[36m;[39m
+[34m│[39m                 [35mrémuneration_mensuelle[39m [36m=[39m enfant[36m.[39m[35mrémuneration_mensuelle[39m[36m;[39m
+[34m│[39m                 [35mdate_de_naissance[39m [36m=[39m enfant[36m.[39m[35mdate_de_naissance[39m[36m;[39m
+[34m│[39m                 [35ma_déjà_ouvert_droit_aux_allocations_familiales[39m [36m=[39m
+[34m│[39m                   enfant[36m.[39m[35ma_déjà_ouvert_droit_aux_allocations_familiales[39m[36m;[39m
+[34m│[39m               [36m}[39m
+[34m│[39m           [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mfalse[39m[34m)[39m
+[34m│[39m     ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_legislatif.catala_fr:1047.7-1047.42:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m1047 │[39m       nombre de ménage.personnes_à_charge = 0
+[34m│[39m [34m     │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie législative[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre IV : Allocations de logement[39m
+[34m│[39m [34m  └┬ Chapitre Ier : Champ d'application[39m
+[34m│[39m [34m   └─ Article L841-1[39m
+[34m│[39m   [32mlength[39m ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_legislatif.catala_fr:1020.5-1032.8:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m1020 │[39m     existe personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m     │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1021 │[39m       tel que (
+[34m│[39m [34m     │[39m       [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1022 │[39m         selon personne_à_charge sous forme
+[34m│[39m [34m     │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1023 │[39m         -- AutrePersonneÀCharge contenu parent :
+[34m│[39m [34m     │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1024 │[39m           # Cela a l'air similaire au 3° du R823-4 code construction mais
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1025 │[39m           # ici le pourcentage est "fixé par voie réglementaire" au lieu d'être
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1026 │[39m           # fixé à 80%.
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1027 │[39m           # TODO juridique: vérifier si ce pourcentage fixé par voie réglementaire
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1028 │[39m           # est bien égal à 80%.
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1029 │[39m           parent.ascendant_descendant_collatéral_deuxième_troisième_degré
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1030 │[39m           et parent.incapacité_80_pourcent_ou_restriction_emploi
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1031 │[39m         -- EnfantÀCharge contenu enfant : faux
+[34m│[39m [34m     │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1032 │[39m       )
+[34m│[39m [34m     │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie législative[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre IV : Allocations de logement[39m
+[34m│[39m [34m  └┬ Chapitre Ier : Champ d'application[39m
+[34m│[39m [34m   └─ Article L841-1[39m
+[34m│[39m   [32mfold[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39macc[36m:[39m [33mbool[39m[36m)[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m      acc
+[34m│[39m      [32m||[39m [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m         [36m|[39m [35mEnfantÀCharge[39m enfant [36m→[39m [33mfalse[39m
+[34m│[39m         [36m|[39m [35mAutrePersonneÀCharge[39m parent [36m→[39m
+[34m│[39m           [36m([39mparent[36m.[39m[35mascendant_descendant_collatéral_deuxième_troisième_degré[39m
+[34m│[39m            [32m&&[39m parent[36m.[39m[35mincapacité_80_pourcent_ou_restriction_emploi[39m[36m)[39m[34m)[39m
+[34m│[39m     [33mfalse[39m
+[34m│[39m     ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_legislatif.catala_fr:1004.5-1005.74:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m1004 │[39m     existe personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m     │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1005 │[39m       tel que éligibilité_commune.condition_2_r823_4 de personne_à_charge
+[34m│[39m [34m     │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mPartie législative[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre IV : Allocations de logement[39m
+[34m│[39m [34m  └┬ Chapitre Ier : Champ d'application[39m
+[34m│[39m [34m   └─ Article L841-1[39m
+[34m│[39m   [32mfold[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39macc[36m:[39m [33mbool[39m[36m)[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m      acc [32m||[39m éligibilité_commune[36m.[39m[35mcondition_2_r823_4[39m personne_à_charge[34m)[39m
+[34m│[39m     [33mfalse[39m
+[34m│[39m     ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_legislatif.catala_fr:965.5-984.8:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m965 │[39m     nombre de
+[34m│[39m [34m    │[39m     [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m966 │[39m       (
+[34m│[39m [34m    │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34m967 │[39m         liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m968 │[39m           tel que (
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m969 │[39m             selon personne_à_charge sous forme
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m970 │[39m             -- AutrePersonneÀCharge : faux
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m971 │[39m             -- EnfantÀCharge contenu enfant :
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m972 │[39m               non (
+[34m│[39m [34m    │[39m               [1m[31m‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m973 │[39m                 prestations_familiales.droit_ouvert de
+[34m│[39m [34m    │[39m                 [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m974 │[39m                   Prestations_familiales.EnfantPrestationsFamiliales {
+[34m│[39m [34m    │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m975 │[39m                     -- identifiant: enfant.identifiant
+[34m│[39m [34m    │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m976 │[39m                     -- obligation_scolaire: enfant.obligation_scolaire
+[34m│[39m [34m    │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m977 │[39m                     -- rémuneration_mensuelle: enfant.rémuneration_mensuelle
+[34m│[39m [34m    │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m978 │[39m                     -- date_de_naissance: enfant.date_de_naissance
+[34m│[39m [34m    │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m979 │[39m                     -- a_déjà_ouvert_droit_aux_allocations_familiales:
+[34m│[39m [34m    │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m980 │[39m                       enfant.a_déjà_ouvert_droit_aux_allocations_familiales
+[34m│[39m [34m    │[39m                       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m981 │[39m                   }
+[34m│[39m [34m    │[39m                   [1m[31m‾[0;31m[39m
+[34m│[39m [34m982 │[39m               )
+[34m│[39m [34m    │[39m               [1m[31m‾[0;31m[39m
+[34m│[39m [34m983 │[39m           )
+[34m│[39m [34m    │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m984 │[39m       )
+[34m│[39m [34m    │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie législative[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre IV : Allocations de logement[39m
+[34m│[39m [34m  └┬ Chapitre Ier : Champ d'application[39m
+[34m│[39m [34m   └─ Article L841-1[39m
+[34m│[39m   [32mlength[39m
+[34m│[39m     [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m             [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m             [36m|[39m [35mEnfantÀCharge[39m enfant [36m→[39m
+[34m│[39m               [32m~[39m
+[34m│[39m                 prestations_familiales[36m.[39m[35mdroit_ouvert[39m
+[34m│[39m                   [36m{[39m [36m[34mPrestations_familiales[36m.EnfantPrestationsFamiliales[39m
+[34m│[39m                     [35midentifiant[39m [36m=[39m enfant[36m.[39m[35midentifiant[39m[36m;[39m
+[34m│[39m                     [35mobligation_scolaire[39m [36m=[39m enfant[36m.[39m[35mobligation_scolaire[39m[36m;[39m
+[34m│[39m                     [35mrémuneration_mensuelle[39m [36m=[39m enfant[36m.[39m[35mrémuneration_mensuelle[39m[36m;[39m
+[34m│[39m                     [35mdate_de_naissance[39m [36m=[39m enfant[36m.[39m[35mdate_de_naissance[39m[36m;[39m
+[34m│[39m                     [35ma_déjà_ouvert_droit_aux_allocations_familiales[39m [36m=[39m
+[34m│[39m                       enfant[36m.[39m[35ma_déjà_ouvert_droit_aux_allocations_familiales[39m[36m;[39m
+[34m│[39m                   [36m}[39m
+[34m│[39m             [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mfalse[39m[34m)[39m
+[34m│[39m       ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_legislatif.catala_fr:966.7-984.8:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m966 │[39m       (
+[34m│[39m [34m    │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34m967 │[39m         liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m968 │[39m           tel que (
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m969 │[39m             selon personne_à_charge sous forme
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m970 │[39m             -- AutrePersonneÀCharge : faux
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m971 │[39m             -- EnfantÀCharge contenu enfant :
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m972 │[39m               non (
+[34m│[39m [34m    │[39m               [1m[31m‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m973 │[39m                 prestations_familiales.droit_ouvert de
+[34m│[39m [34m    │[39m                 [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m974 │[39m                   Prestations_familiales.EnfantPrestationsFamiliales {
+[34m│[39m [34m    │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m975 │[39m                     -- identifiant: enfant.identifiant
+[34m│[39m [34m    │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m976 │[39m                     -- obligation_scolaire: enfant.obligation_scolaire
+[34m│[39m [34m    │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m977 │[39m                     -- rémuneration_mensuelle: enfant.rémuneration_mensuelle
+[34m│[39m [34m    │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m978 │[39m                     -- date_de_naissance: enfant.date_de_naissance
+[34m│[39m [34m    │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m979 │[39m                     -- a_déjà_ouvert_droit_aux_allocations_familiales:
+[34m│[39m [34m    │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m980 │[39m                       enfant.a_déjà_ouvert_droit_aux_allocations_familiales
+[34m│[39m [34m    │[39m                       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m981 │[39m                   }
+[34m│[39m [34m    │[39m                   [1m[31m‾[0;31m[39m
+[34m│[39m [34m982 │[39m               )
+[34m│[39m [34m    │[39m               [1m[31m‾[0;31m[39m
+[34m│[39m [34m983 │[39m           )
+[34m│[39m [34m    │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m984 │[39m       )
+[34m│[39m [34m    │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie législative[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre IV : Allocations de logement[39m
+[34m│[39m [34m  └┬ Chapitre Ier : Champ d'application[39m
+[34m│[39m [34m   └─ Article L841-1[39m
+[34m│[39m   [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m           [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m           [36m|[39m [35mEnfantÀCharge[39m enfant [36m→[39m
+[34m│[39m             [32m~[39m
+[34m│[39m               prestations_familiales[36m.[39m[35mdroit_ouvert[39m
+[34m│[39m                 [36m{[39m [36m[34mPrestations_familiales[36m.EnfantPrestationsFamiliales[39m
+[34m│[39m                   [35midentifiant[39m [36m=[39m enfant[36m.[39m[35midentifiant[39m[36m;[39m
+[34m│[39m                   [35mobligation_scolaire[39m [36m=[39m enfant[36m.[39m[35mobligation_scolaire[39m[36m;[39m
+[34m│[39m                   [35mrémuneration_mensuelle[39m [36m=[39m enfant[36m.[39m[35mrémuneration_mensuelle[39m[36m;[39m
+[34m│[39m                   [35mdate_de_naissance[39m [36m=[39m enfant[36m.[39m[35mdate_de_naissance[39m[36m;[39m
+[34m│[39m                   [35ma_déjà_ouvert_droit_aux_allocations_familiales[39m [36m=[39m
+[34m│[39m                     enfant[36m.[39m[35ma_déjà_ouvert_droit_aux_allocations_familiales[39m[36m;[39m
+[34m│[39m                 [36m}[39m
+[34m│[39m           [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mfalse[39m[34m)[39m
+[34m│[39m     ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_legislatif.catala_fr:937.8-954.8:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m937 │[39m     et nombre de
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m938 │[39m       (
+[34m│[39m [34m    │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34m939 │[39m         liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m940 │[39m           tel que (
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m941 │[39m             selon personne_à_charge sous forme
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m942 │[39m             -- AutrePersonneÀCharge : faux
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m943 │[39m             -- EnfantÀCharge contenu enfant :
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m944 │[39m               prestations_familiales.droit_ouvert de
+[34m│[39m [34m    │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m945 │[39m                 Prestations_familiales.EnfantPrestationsFamiliales {
+[34m│[39m [34m    │[39m                 [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m946 │[39m                   -- identifiant: enfant.identifiant
+[34m│[39m [34m    │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m947 │[39m                   -- obligation_scolaire: enfant.obligation_scolaire
+[34m│[39m [34m    │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m948 │[39m                   -- rémuneration_mensuelle: enfant.rémuneration_mensuelle
+[34m│[39m [34m    │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m949 │[39m                   -- date_de_naissance: enfant.date_de_naissance
+[34m│[39m [34m    │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m950 │[39m                   -- a_déjà_ouvert_droit_aux_allocations_familiales:
+[34m│[39m [34m    │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m951 │[39m                     enfant.a_déjà_ouvert_droit_aux_allocations_familiales
+[34m│[39m [34m    │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m952 │[39m                 }
+[34m│[39m [34m    │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34m953 │[39m           )
+[34m│[39m [34m    │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m954 │[39m       )
+[34m│[39m [34m    │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie législative[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre IV : Allocations de logement[39m
+[34m│[39m [34m  └┬ Chapitre Ier : Champ d'application[39m
+[34m│[39m [34m   └─ Article L841-1[39m
+[34m│[39m   [32mlength[39m
+[34m│[39m     [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m             [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m             [36m|[39m [35mEnfantÀCharge[39m enfant [36m→[39m
+[34m│[39m               prestations_familiales[36m.[39m[35mdroit_ouvert[39m
+[34m│[39m                 [36m{[39m [36m[34mPrestations_familiales[36m.EnfantPrestationsFamiliales[39m
+[34m│[39m                   [35midentifiant[39m [36m=[39m enfant[36m.[39m[35midentifiant[39m[36m;[39m
+[34m│[39m                   [35mobligation_scolaire[39m [36m=[39m enfant[36m.[39m[35mobligation_scolaire[39m[36m;[39m
+[34m│[39m                   [35mrémuneration_mensuelle[39m [36m=[39m enfant[36m.[39m[35mrémuneration_mensuelle[39m[36m;[39m
+[34m│[39m                   [35mdate_de_naissance[39m [36m=[39m enfant[36m.[39m[35mdate_de_naissance[39m[36m;[39m
+[34m│[39m                   [35ma_déjà_ouvert_droit_aux_allocations_familiales[39m [36m=[39m
+[34m│[39m                     enfant[36m.[39m[35ma_déjà_ouvert_droit_aux_allocations_familiales[39m[36m;[39m
+[34m│[39m                 [36m}[39m
+[34m│[39m             [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mfalse[39m[34m)[39m
+[34m│[39m       ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_legislatif.catala_fr:938.7-954.8:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m938 │[39m       (
+[34m│[39m [34m    │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34m939 │[39m         liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m940 │[39m           tel que (
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m941 │[39m             selon personne_à_charge sous forme
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m942 │[39m             -- AutrePersonneÀCharge : faux
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m943 │[39m             -- EnfantÀCharge contenu enfant :
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m944 │[39m               prestations_familiales.droit_ouvert de
+[34m│[39m [34m    │[39m               [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m945 │[39m                 Prestations_familiales.EnfantPrestationsFamiliales {
+[34m│[39m [34m    │[39m                 [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m946 │[39m                   -- identifiant: enfant.identifiant
+[34m│[39m [34m    │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m947 │[39m                   -- obligation_scolaire: enfant.obligation_scolaire
+[34m│[39m [34m    │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m948 │[39m                   -- rémuneration_mensuelle: enfant.rémuneration_mensuelle
+[34m│[39m [34m    │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m949 │[39m                   -- date_de_naissance: enfant.date_de_naissance
+[34m│[39m [34m    │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m950 │[39m                   -- a_déjà_ouvert_droit_aux_allocations_familiales:
+[34m│[39m [34m    │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m951 │[39m                     enfant.a_déjà_ouvert_droit_aux_allocations_familiales
+[34m│[39m [34m    │[39m                     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m952 │[39m                 }
+[34m│[39m [34m    │[39m                 [1m[31m‾[0;31m[39m
+[34m│[39m [34m953 │[39m           )
+[34m│[39m [34m    │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m954 │[39m       )
+[34m│[39m [34m    │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie législative[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre IV : Allocations de logement[39m
+[34m│[39m [34m  └┬ Chapitre Ier : Champ d'application[39m
+[34m│[39m [34m   └─ Article L841-1[39m
+[34m│[39m   [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m           [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m           [36m|[39m [35mEnfantÀCharge[39m enfant [36m→[39m
+[34m│[39m             prestations_familiales[36m.[39m[35mdroit_ouvert[39m
+[34m│[39m               [36m{[39m [36m[34mPrestations_familiales[36m.EnfantPrestationsFamiliales[39m
+[34m│[39m                 [35midentifiant[39m [36m=[39m enfant[36m.[39m[35midentifiant[39m[36m;[39m
+[34m│[39m                 [35mobligation_scolaire[39m [36m=[39m enfant[36m.[39m[35mobligation_scolaire[39m[36m;[39m
+[34m│[39m                 [35mrémuneration_mensuelle[39m [36m=[39m enfant[36m.[39m[35mrémuneration_mensuelle[39m[36m;[39m
+[34m│[39m                 [35mdate_de_naissance[39m [36m=[39m enfant[36m.[39m[35mdate_de_naissance[39m[36m;[39m
+[34m│[39m                 [35ma_déjà_ouvert_droit_aux_allocations_familiales[39m [36m=[39m
+[34m│[39m                   enfant[36m.[39m[35ma_déjà_ouvert_droit_aux_allocations_familiales[39m[36m;[39m
+[34m│[39m               [36m}[39m
+[34m│[39m           [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mfalse[39m[34m)[39m
+[34m│[39m     ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/code_construction_legislatif.catala_fr:915.8-921.8:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m915 │[39m     et existe prestation parmi ménage.prestations_reçues
+[34m│[39m [34m    │[39m        [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m916 │[39m       tel que (
+[34m│[39m [34m    │[39m       [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m917 │[39m         prestation = PrestationReçue.AllocationsFamiliales
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m918 │[39m         ou prestation = PrestationReçue.ComplémentFamilial
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m919 │[39m         ou prestation = PrestationReçue.AllocationSoutienFamilial
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m920 │[39m         ou prestation = AllocationSoutienEnfantHandicapé
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m921 │[39m       )
+[34m│[39m [34m    │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mPartie législative[39m
+[34m│[39m [34m└┬ Livre VIII : Aides personnelles au logement[39m
+[34m│[39m [34m └┬ Titre IV : Allocations de logement[39m
+[34m│[39m [34m  └┬ Chapitre Ier : Champ d'application[39m
+[34m│[39m [34m   └─ Article L841-1[39m
+[34m│[39m   [32mfold[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39macc[36m:[39m [33mbool[39m[36m)[39m [36m([39mprestation[36m:[39m [36mPrestationReçue[39m[36m)[39m [36m→[39m
+[34m│[39m      acc
+[34m│[39m      [32m||[39m prestation [32m=[39m [35mAllocationsFamiliales[39m
+[34m│[39m      [32m||[39m prestation [32m=[39m [35mComplémentFamilial[39m
+[34m│[39m      [32m||[39m prestation [32m=[39m [35mAllocationSoutienFamilial[39m
+[34m│[39m      [32m||[39m prestation [32m=[39m [35mAllocationSoutienEnfantHandicapé[39m[34m)[39m
+[34m│[39m     [33mfalse[39m
+[34m│[39m     ménage[36m.[39m[35mprestations_reçues[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/prologue.catala_fr:1243.7-1255.8:[0;34m[39m
+[34m│[39m [34m     │[39m
+[34m│[39m [34m1243 │[39m       (
+[34m│[39m [34m     │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34m1244 │[39m         liste de personne_à_charge parmi ménage.personnes_à_charge
+[34m│[39m [34m     │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1245 │[39m           tel que (
+[34m│[39m [34m     │[39m           [1m[31m‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1246 │[39m             selon personne_à_charge sous forme
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1247 │[39m             -- AutrePersonneÀCharge : vrai
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1248 │[39m             -- EnfantÀCharge contenu enfant :
+[34m│[39m [34m     │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1249 │[39m               (
+[34m│[39m [34m     │[39m               [1m[31m‾[0;31m[39m
+[34m│[39m [34m1250 │[39m                 selon enfant.situation_garde_alternée sous forme
+[34m│[39m [34m     │[39m                 [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1251 │[39m                 -- GardeAlternéeCoefficientPriseEnCharge : faux
+[34m│[39m [34m     │[39m                 [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1252 │[39m                 -- PasDeGardeAlternée : vrai
+[34m│[39m [34m     │[39m                 [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m1253 │[39m               )
+[34m│[39m [34m     │[39m               [1m[31m‾[0;31m[39m
+[34m│[39m [34m1254 │[39m           )
+[34m│[39m [34m     │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m1255 │[39m       ) -- résidence: ménage.résidence -- nombre_autres_occupants_logement:
+[34m│[39m [34m     │[39m       [1m[31m‾[0;31m[39m
+[34m│[39m [34mPrologue : aides au logement[39m
+[34m│[39m [34m└┬ Calcul de l'aide au logement effective[39m
+[34m│[39m [34m └─ Calculette avec garde alternée[39m
+[34m│[39m   [32mfilter[39m [34m([39m[36mλ[39m [36m([39mpersonne_à_charge[36m:[39m [36mPersonneÀCharge[39m[36m)[39m [36m→[39m
+[34m│[39m           [31mmatch[39m personne_à_charge [31mwith[39m
+[34m│[39m           [36m|[39m [35mEnfantÀCharge[39m enfant [36m→[39m
+[34m│[39m             [31mmatch[39m enfant[36m.[39m[35msituation_garde_alternée[39m [31mwith[39m
+[34m│[39m             [36m|[39m [35mPasDeGardeAlternée[39m [36m→[39m [33mtrue[39m
+[34m│[39m             [36m|[39m [35mGardeAlternéeCoefficientPriseEnCharge[39m _ [36m→[39m [33mfalse[39m
+[34m│[39m           [36m|[39m [35mAutrePersonneÀCharge[39m _ [36m→[39m [33mtrue[39m[34m)[39m
+[34m│[39m     ménage[36m.[39m[35mpersonnes_à_charge[39m
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/autres_sources.catala_fr:291.14-291.74:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m291 │[39m           si nombre de coefficients_enfants_garde_alternée_pris_en_compte = 0 alors
+[34m│[39m [34m    │[39m              [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mConseil d'État, 5ème - 4ème chambres réunies, 21/07/2017, 398563[39m
+[34m│[39m   [32mlength[39m coefficients_enfants_garde_alternée_pris_en_compte
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/autres_sources.catala_fr:303.15-305.16:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m303 │[39m               (
+[34m│[39m [34m    │[39m               [1m[31m‾[0;31m[39m
+[34m│[39m [34m304 │[39m                 somme décimal de coefficients_enfants_garde_alternée_pris_en_compte
+[34m│[39m [34m    │[39m                 [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m305 │[39m               )
+[34m│[39m [34m    │[39m               [1m[31m‾[0;31m[39m
+[34m│[39m [34mConseil d'État, 5ème - 4ème chambres réunies, 21/07/2017, 398563[39m
+[34m│[39m   [32mreduce[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39msum1[36m:[39m [33mdecimal[39m[36m)[39m [36m([39msum2[36m:[39m [33mdecimal[39m[36m)[39m [36m→[39m sum1 [32m+[39m sum2[34m)[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39m[36m)[39m [36m→[39m [33m0.[39m[34m)[39m
+[34m│[39m     coefficients_enfants_garde_alternée_pris_en_compte
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1maides_logement/autres_sources.catala_fr:308.19-308.79:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m308 │[39m                   nombre de coefficients_enfants_garde_alternée_pris_en_compte
+[34m│[39m [34m    │[39m                   [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34mConseil d'État, 5ème - 4ème chambres réunies, 21/07/2017, 398563[39m
+[34m│[39m   [32mlength[39m coefficients_enfants_garde_alternée_pris_en_compte
+[34m└─[39m

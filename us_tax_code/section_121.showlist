@@ -1,0 +1,89 @@
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mus_tax_code/section_121.catala_en:180.5-190.6:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m180 │[39m     sum duration of (
+[34m│[39m [34m    │[39m     [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m181 │[39m       map each period among periods to
+[34m│[39m [34m    │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m182 │[39m         if date_of_sale_or_exchange <= period.begin + 5 year then
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m183 │[39m           period.end - period.begin
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m184 │[39m         else
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾[0;31m[39m
+[34m│[39m [34m185 │[39m           (
+[34m│[39m [34m    │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m186 │[39m             if date_of_sale_or_exchange >= period.end + 5 year then
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m187 │[39m               0 day
+[34m│[39m [34m    │[39m               [1m[31m‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m188 │[39m             else ((period.end + 5 year) - date_of_sale_or_exchange)
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m189 │[39m           )
+[34m│[39m [34m    │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m190 │[39m     )
+[34m│[39m [34m    │[39m     [1m[31m‾[0;31m[39m
+[34m│[39m [34mSection 121[39m
+[34m│[39m [34m└─ (a) Exclusion[39m
+[34m│[39m   [32mreduce[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39msum1[36m:[39m [33mduration[39m[36m)[39m [36m([39msum2[36m:[39m [33mduration[39m[36m)[39m [36m→[39m sum1 [32m+[39m sum2[34m)[39m
+[34m│[39m     [34m([39m[36mλ[39m [36m([39m[36m)[39m [36m→[39m [33m[0 years, 0 months, 0 days][39m[34m)[39m
+[34m│[39m     [32mmap[39m [34m([39m[36mλ[39m [36m([39mperiod[36m:[39m [36mPeriod[39m[36m)[39m [36m→[39m
+[34m│[39m          [31mif[39m
+[34m│[39m            date_of_sale_or_exchange
+[34m│[39m            [32m<=[39m period[36m.[39m[35mbegin[39m [32m+[39m [33m[5 years, 0 months, 0 days][39m
+[34m│[39m          [31mthen[39m
+[34m│[39m            period[36m.[39m[35mend[39m [32m-[39m period[36m.[39m[35mbegin[39m
+[34m│[39m          [31melse if[39m
+[34m│[39m            date_of_sale_or_exchange
+[34m│[39m            [32m>=[39m period[36m.[39m[35mend[39m [32m+[39m [33m[5 years, 0 months, 0 days][39m
+[34m│[39m          [31mthen[39m
+[34m│[39m            [33m[0 years, 0 months, 0 days][39m
+[34m│[39m          [31melse[39m
+[34m│[39m            period[36m.[39m[35mend[39m [32m+[39m [33m[5 years, 0 months, 0 days][39m
+[34m│[39m            [32m-[39m date_of_sale_or_exchange[34m)[39m
+[34m│[39m       periods
+[34m└─[39m
+[34m┌─[[32m[1mRESULT[0;32m[34m]─[39m
+[34m│[39m [34m─➤ [1mus_tax_code/section_121.catala_en:180.21-190.6:[0;34m[39m
+[34m│[39m [34m    │[39m
+[34m│[39m [34m180 │[39m     sum duration of (
+[34m│[39m [34m    │[39m                     [1m[31m‾[0;31m[39m
+[34m│[39m [34m181 │[39m       map each period among periods to
+[34m│[39m [34m    │[39m       [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m182 │[39m         if date_of_sale_or_exchange <= period.begin + 5 year then
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m183 │[39m           period.end - period.begin
+[34m│[39m [34m    │[39m           [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m184 │[39m         else
+[34m│[39m [34m    │[39m         [1m[31m‾‾‾‾[0;31m[39m
+[34m│[39m [34m185 │[39m           (
+[34m│[39m [34m    │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m186 │[39m             if date_of_sale_or_exchange >= period.end + 5 year then
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m187 │[39m               0 day
+[34m│[39m [34m    │[39m               [1m[31m‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m188 │[39m             else ((period.end + 5 year) - date_of_sale_or_exchange)
+[34m│[39m [34m    │[39m             [1m[31m‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[0;31m[39m
+[34m│[39m [34m189 │[39m           )
+[34m│[39m [34m    │[39m           [1m[31m‾[0;31m[39m
+[34m│[39m [34m190 │[39m     )
+[34m│[39m [34m    │[39m     [1m[31m‾[0;31m[39m
+[34m│[39m [34mSection 121[39m
+[34m│[39m [34m└─ (a) Exclusion[39m
+[34m│[39m   [32mmap[39m [34m([39m[36mλ[39m [36m([39mperiod[36m:[39m [36mPeriod[39m[36m)[39m [36m→[39m
+[34m│[39m        [31mif[39m
+[34m│[39m          date_of_sale_or_exchange
+[34m│[39m          [32m<=[39m period[36m.[39m[35mbegin[39m [32m+[39m [33m[5 years, 0 months, 0 days][39m
+[34m│[39m        [31mthen[39m
+[34m│[39m          period[36m.[39m[35mend[39m [32m-[39m period[36m.[39m[35mbegin[39m
+[34m│[39m        [31melse if[39m
+[34m│[39m          date_of_sale_or_exchange
+[34m│[39m          [32m>=[39m period[36m.[39m[35mend[39m [32m+[39m [33m[5 years, 0 months, 0 days][39m
+[34m│[39m        [31mthen[39m
+[34m│[39m          [33m[0 years, 0 months, 0 days][39m
+[34m│[39m        [31melse[39m
+[34m│[39m          period[36m.[39m[35mend[39m [32m+[39m [33m[5 years, 0 months, 0 days][39m
+[34m│[39m          [32m-[39m date_of_sale_or_exchange[34m)[39m
+[34m│[39m     periods
+[34m└─[39m
