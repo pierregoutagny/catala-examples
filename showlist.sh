@@ -31,3 +31,25 @@ catala showlist \
     --color=always \
     us_tax_code/section_121.catala_en \
     > us_tax_code/section_121.showlist
+
+# show nested exception depth
+../catala/_build/default/compiler/catala.exe show_exc_depth \
+    -I ./prologue_france \
+    -I ./base_mensuelle_allocations_familiales \
+    -I ./prestations_familiales \
+    -I ./smic \
+    -I ./allocations_familiales \
+    --color=always \
+    aides_logement/Aides_logement.catala_fr
+
+# show exception structure
+../catala/_build/default/compiler/catala.exe exceptions \
+    -I ./prologue_france \
+    -I ./base_mensuelle_allocations_familiales \
+    -I ./prestations_familiales \
+    -I ./smic \
+    -I ./allocations_familiales \
+    --color=always \
+    aides_logement/Aides_logement.catala_fr \
+    --scope=CalculAllocationLogementAccessionPropriété \
+    --variable=montant_forfaitaire_charges | less -R
