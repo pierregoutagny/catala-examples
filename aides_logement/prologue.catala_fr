@@ -584,7 +584,7 @@ déclaration champ d'application CalculAidePersonnaliséeLogementLocatif:
     état montant_minimal
 
   résultat aide_finale_moins_crds_arrondie contenu argent
-    dépend de aide_finale contenu argent
+    dépend de aide_brute contenu argent
 
 champ d'application CalculAidePersonnaliséeLogementLocatif:
   définition contributions_sociales.date_courante égal à date_courante
