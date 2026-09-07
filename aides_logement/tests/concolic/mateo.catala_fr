@@ -17,7 +17,7 @@ déclaration champ d'application Test:
     entrée nombre_personnes_à_charge contenu entier
     entrée ressources_ménage_arrondies contenu argent
     entrée réduction_loyer_solidarité contenu argent
-    résultat aide_finale_nette_arrondie contenu argent
+    résultat aide_finale_formule contenu argent
 
 champ d'application Test:
     assertion ((date_courante >= |2010-01-01|)
@@ -43,5 +43,5 @@ champ d'application Test:
     définition a.ressources_ménage_arrondies égal à ressources_ménage_arrondies
     définition a.réduction_loyer_solidarité égal à réduction_loyer_solidarité
 
-    définition aide_finale_nette_arrondie égal à a.aide_finale_nette_arrondie
+    définition aide_finale_formule égal à a.aide_finale_formule
 ```

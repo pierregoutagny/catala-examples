@@ -286,8 +286,6 @@ déclaration champ d'application CalculAidePersonnaliséeLogementLocatif:
     état montée_en_charge_saint_pierre_miquelon
     état montant_minimal
 
-  résultat aide_finale_nette_arrondie contenu argent
-
 champ d'application CalculAidePersonnaliséeLogementLocatif:
   définition contributions_sociales.date_courante égal à date_courante
   définition contributions_sociales.lieu égal à résidence

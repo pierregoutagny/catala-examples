@@ -1758,15 +1758,6 @@ champ d'application CalculAidePersonnaliséeLogementLocatif:
     alors
       aide_finale_moins_crds_arrondie + crds
     sinon 0€
-
-  # Expose explicitement l'intermédiaire pour les tests et explain.
-  définition aide_finale_nette_arrondie égal à
-    soit aide_brute égal à traitement_aide_finale de aide_finale_formule dans
-    soit crds égal à contributions_sociales.montant de aide_brute dans
-    soit aide_nette_arrondie égal à
-      arrondi de ((aide_brute - crds) - 0,50€)
-    dans
-    si aide_nette_arrondie >= 0€ alors aide_nette_arrondie sinon 0€
 ```
 
 Pour les locataires qui bénéficient de la réduction de loyer de solidarité en application
