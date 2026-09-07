@@ -1,0 +1,79 @@
+> Inclusion: ../../aides_logement.catala_fr
+
+```catala
+déclaration champ d'application Test:
+    a champ d'application CalculAllocationLogement
+
+    entrée mode_occupation contenu ModeOccupation
+    entrée type_aide contenu TypeAidesPersonnelleLogement
+    entrée ressources_ménage contenu argent
+    entrée situation_familiale contenu SituationFamiliale # date mariage ?
+    entrée nombre_personnes_à_charge contenu entier
+    entrée zone contenu ZoneDHabitation
+    entrée date_courante contenu date
+    entrée résidence contenu Collectivité
+
+    # TODO: on pourrait utiliser ces catégories-là pour simplifier ?
+    # interne catégorie_calcul_apl contenu CatégorieCalculAPL
+    # interne situation_familiale_calcul_apl contenu SituationFamilialeCalculAPL
+
+    résultat aide_finale_formule contenu argent
+
+déclaration valide_TypeBailleur contenu booléen
+    dépend de bailleur contenu TypeBailleur
+    égal à
+    selon bailleur sous forme
+    -- BailleurSocial de convention: convention.réduction_loyer_solidarité_perçue >= 0€
+    -- BailleurPrivé: vrai
+
+déclaration valide_ChangementLogementD842_4 contenu booléen
+    dépend de changement_logement_d842_4 contenu ChangementLogementD842_4
+    égal à
+    selon changement_logement_d842_4 sous forme
+    -- Changement de infos: infos.ancien_loyer_principal >= 0€ et infos.ancienne_allocation_logement >= 0€
+    -- PasDeChangement: vrai
+
+déclaration valide_Location contenu booléen
+    dépend de location contenu Location
+    égal à
+    valide_TypeBailleur de location.bailleur
+    et location.loyer_principal >= 0€
+    et valide_ChangementLogementD842_4 de location.changement_logement_d842_4
+
+déclaration valide_Propriétaire contenu booléen
+    dépend de propriétaire contenu Propriétaire
+    égal à
+    propriétaire.mensualité_principale >= 0€
+    et propriétaire.charges_mensuelles_prêt >= 0€
+    # date_entrée_logement contenu date # comparer à la date courante ?
+    # donnée prêt contenu Prêt # comparer prêt.date_signature à la date courante ?
+
+déclaration valide_ModeOccupation contenu booléen
+    dépend de mode_occupation contenu ModeOccupation
+    égal à
+    selon mode_occupation sous forme
+            -- Locataire de location: valide_Location de location
+            -- RésidentLogementFoyer de log: log.redevance >= 0€ # comparer log.date_conventionnement à la date courante ?
+            -- AccessionPropriétéLocalUsageExclusifHabitation de propriétaire: valide_Propriétaire de propriétaire
+            -- SousLocataire de location: valide_Location de location
+            -- LocationAccession de propriétaire: valide_Propriétaire de propriétaire
+
+champ d'application Test:
+    assertion ((date_courante >= |2010-01-01|)
+    et (valide_ModeOccupation de mode_occupation)
+    et (ressources_ménage >= 0€)
+    et (nombre_personnes_à_charge >= 0)
+    et (nombre_personnes_à_charge <= 10)
+    et (si résidence = Métropole alors vrai sinon zone = Zone2))
+
+    définition a.mode_occupation égal à mode_occupation 
+    définition a.type_aide égal à type_aide 
+    définition a.ressources_ménage égal à ressources_ménage 
+    définition a.situation_familiale égal à situation_familiale 
+    définition a.nombre_personnes_à_charge égal à nombre_personnes_à_charge 
+    définition a.zone égal à zone 
+    définition a.date_courante égal à date_courante 
+    définition a.résidence égal à résidence 
+
+    définition aide_finale_formule égal à a.aide_finale_formule
+```
